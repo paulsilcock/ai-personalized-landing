@@ -1,12 +1,13 @@
 import React from "react";
 import { ArrowRight, User } from "lucide-react";
+import { useUserId } from "@/hooks/use-user-id";
 const caseStudyData = [{
   tag: "ABM",
   metric: "+$2.1M in pipeline",
   title: "How Brex Could Drive 340% Pipeline Growth with AI Personalization",
   company: "Brex",
   logo: "/lovable-uploads/bd1d1039-eb4d-4b70-aeae-8ccff7695420.png",
-  href: "/demo/brex.com",
+  website: "brex.com",
   colorScheme: "bg-purple-500/80 hover:bg-purple-600/90"
 }, {
   tag: "ABM",
@@ -14,7 +15,7 @@ const caseStudyData = [{
   title: "How HubSpot can Achieve 180% Meeting Rate Increase with Smart Website Personalization",
   company: "HubSpot",
   logo: "/lovable-uploads/db6b2199-96ac-46c7-b11e-174cd1e2d792.png",
-  href: "/demo/hubspot.com",
+  website: "hubspot.com",
   colorScheme: "bg-indigo-500/80 hover:bg-indigo-600/90"
 }, {
   tag: "ABM",
@@ -22,10 +23,17 @@ const caseStudyData = [{
   title: "How Notion Can Boost Website Conversions 35% in 45 Days",
   company: "Notion",
   logo: "/lovable-uploads/2dd60b04-32ef-4eb6-b2b1-a8c1d85e2aff.png",
-  href: "/demo/notion.com/enterprise",
+  website: "notion.com/enterprise",
   colorScheme: "bg-purple-500/80 hover:bg-purple-600/90"
 }];
 const Features: React.FC = () => {
+  const userId = useUserId();
+  
+  const getDemoUrl = (website: string) => {
+    const baseUrl = `https://dash.newmode.ai/demo/${website}`;
+    return userId ? `${baseUrl}?nm_id=${userId}` : baseUrl;
+  };
+
   return <section id="features" className="section-padding bg-white">
       <div className="max-container">
         <div className="text-center mb-16">
@@ -36,7 +44,7 @@ const Features: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {caseStudyData.map((caseStudy, index) => <a key={index} href={caseStudy.href} className={`group p-6 rounded-xl ${caseStudy.colorScheme} text-white transition-all transform hover:-translate-y-1 hover:shadow-xl cursor-pointer`}>
+          {caseStudyData.map((caseStudy, index) => <a key={index} href={getDemoUrl(caseStudy.website)} className={`group p-6 rounded-xl ${caseStudy.colorScheme} text-white transition-all transform hover:-translate-y-1 hover:shadow-xl cursor-pointer`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-medium">
                   {caseStudy.tag}
