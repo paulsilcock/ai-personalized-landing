@@ -33,8 +33,8 @@ const steps: Step[] = [
     title: "Create Experiences",
     description:
       "Describe what you want in plain English. Our AI transforms your website for each account instantly",
-    image: "create-experiences-step.png",
-    video: null,
+    image: null,
+    video: "step-3-video",
     id: "how-it-works-create-experiences",
   },
   {
