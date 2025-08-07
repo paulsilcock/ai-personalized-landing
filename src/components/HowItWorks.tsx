@@ -102,7 +102,7 @@ const HowItWorks: React.FC = () => {
                       muted
                       playsInline
                       // style={{ transform: "scale(1.08)" }}
-                      className="aspect-video rounded-lg"
+                      className="border rounded-xl"
                     >
                       <source
                         src={step.video + ".mp4"}
