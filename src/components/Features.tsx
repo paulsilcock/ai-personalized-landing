@@ -44,7 +44,7 @@ const Features: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {caseStudyData.map((caseStudy, index) => <a key={index} href={getDemoUrl(caseStudy.website)} className={`group p-6 rounded-xl ${caseStudy.colorScheme} text-white transition-all transform hover:-translate-y-1 hover:shadow-xl cursor-pointer`}>
+          {caseStudyData.map((caseStudy, index) => <a key={index} href={getDemoUrl(caseStudy.website)} target="_blank" rel="noopener noreferrer" className={`group p-6 rounded-xl ${caseStudy.colorScheme} text-white transition-all transform hover:-translate-y-1 hover:shadow-xl cursor-pointer`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-medium">
                   {caseStudy.tag}
