@@ -15,7 +15,7 @@ const steps: Step[] = [
     title: "Install Script",
     description:
       "Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML",
-    image: "/lovable-uploads/7ec82050-f07f-43b7-a98d-ab8842dab34f.png",
+    image: "/lovable-uploads/95c758ad-2820-413e-96fb-5532e8c16d30.png",
     video: null,
     id: "how-it-works-install-script",
   },
