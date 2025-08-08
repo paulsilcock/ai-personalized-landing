@@ -102,7 +102,7 @@ const HowItWorks: React.FC = () => {
                       muted
                       playsInline
                       // style={{ transform: "scale(1.08)" }}
-                      className="rounded-xl"
+                      className="w-full h-auto rounded-lg"
                     >
                       <source
                         src={step.video + ".mp4"}
