@@ -13,20 +13,20 @@ const HeroVisualization: React.FC = () => {
         {/* Gradient Definitions */}
         <defs>
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.3" />
-            <stop offset="50%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="white" stopOpacity="0.05" />
-          </linearGradient>
-          
-          <linearGradient id="waveGradient2" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.4" />
-            <stop offset="50%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.3" />
+            <stop offset="0%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.6" />
+            <stop offset="50%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.4" />
             <stop offset="100%" stopColor="white" stopOpacity="0.1" />
           </linearGradient>
           
+          <linearGradient id="waveGradient2" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.7" />
+            <stop offset="50%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.5" />
+            <stop offset="100%" stopColor="white" stopOpacity="0.2" />
+          </linearGradient>
+          
           <linearGradient id="waveGradient3" x1="50%" y1="0%" x2="50%" y2="100%">
-            <stop offset="0%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.08" />
+            <stop offset="0%" stopColor="hsl(var(--craftera-purple))" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="hsl(var(--craftera-blue))" stopOpacity="0.3" />
           </linearGradient>
         </defs>
 
