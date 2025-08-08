@@ -86,7 +86,7 @@ const HowItWorks: React.FC = () => {
               </div>
 
               <div className="w-full md:w-1/2">
-                <div className="relative bg-white shadow-lg rounded-xl border border-gray-100 p-4 overflow-hidden">
+                <div className="relative bg-white shadow-lg rounded-xl p-4 overflow-hidden">
                   {step.image && (
                     <img
                       src={step.image}
@@ -102,7 +102,7 @@ const HowItWorks: React.FC = () => {
                       muted
                       playsInline
                       // style={{ transform: "scale(1.08)" }}
-                      className="border rounded-xl"
+                      className="rounded-xl"
                     >
                       <source
                         src={step.video + ".mp4"}
