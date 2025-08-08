@@ -6,6 +6,7 @@ import LandingPageEffect from "./LandingPageEffect";
 import { useDashLink } from "../hooks/use-dash-link";
 import { PlaygroundButton } from "./cta/PlaygroundButton";
 import { GetStartedButton } from "./cta/GetStartedButton";
+import heroGradient from "@/assets/hero-gradient.jpg";
 const Hero: React.FC = () => {
   const dashLink = useDashLink();
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
@@ -50,13 +51,12 @@ const Hero: React.FC = () => {
               {/* AI personalized page */}
               <div className="bg-white rounded-xl transform transition-all duration-500 ">
                 <div className="overflow-hidden rounded-lg aspect-video">
-                  <video autoPlay loop muted playsInline style={{
-                  transform: "scale(1.08)"
-                }} poster="/first-frame.webp" className="aspect-video">
-                    <source src="/output.mp4" type="video/mp4"></source>
-                    <source src="/output.webm" type="video/webm"></source>
-                    Your browser does not support the video tag.
-                  </video>
+                  <img 
+                    src={heroGradient} 
+                    alt="AI personalization visualization" 
+                    className="aspect-video w-full h-full object-cover"
+                    style={{ transform: "scale(1.08)" }}
+                  />
                 </div>
               </div>
 
