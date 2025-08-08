@@ -15,7 +15,7 @@ const steps: Step[] = [
     title: "Install Script",
     description:
       "Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML",
-    image: "install-script-step.png",
+    image: "/lovable-uploads/7ec82050-f07f-43b7-a98d-ab8842dab34f.png",
     video: null,
     id: "how-it-works-install-script",
   },
@@ -24,13 +24,13 @@ const steps: Step[] = [
     title: "Connect Your Data",
     description:
       "Import target account lists, LinkedIn Ads, or keywords via CSV",
-    image: "connect-data-step.png",
+    image: "/lovable-uploads/3bee3b18-2b37-496b-88b4-10e01e91c600.png",
     video: null,
     id: "how-it-works-connect-data",
   },
   {
     number: "03",
-    title: "Create Experiences",
+    title: "Create 1:1 Landing Pages",
     description:
       "Describe what you want in plain English. Our AI transforms your website for each account instantly",
     image: null,
@@ -39,7 +39,7 @@ const steps: Step[] = [
   },
   {
     number: "04",
-    title: "Activate & Convert",
+    title: "Scale and Automate for Every Visitor",
     description:
       "Target accounts automatically see personalized experiences that drive them to take action",
     image: null,
