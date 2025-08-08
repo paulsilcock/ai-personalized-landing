@@ -6,7 +6,7 @@ import LandingPageEffect from "./LandingPageEffect";
 import { useDashLink } from "../hooks/use-dash-link";
 import { PlaygroundButton } from "./cta/PlaygroundButton";
 import { GetStartedButton } from "./cta/GetStartedButton";
-import heroGradient from "@/assets/hero-gradient.jpg";
+import HeroVisualization from "./HeroVisualization";
 const Hero: React.FC = () => {
   const dashLink = useDashLink();
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
@@ -35,12 +35,7 @@ const Hero: React.FC = () => {
               {/* AI personalized page */}
               <div className="bg-white rounded-xl transform transition-all duration-500 ">
                 <div className="overflow-hidden rounded-lg aspect-video">
-                  <img 
-                    src={heroGradient} 
-                    alt="AI personalization visualization" 
-                    className="aspect-video w-full h-full object-cover"
-                    style={{ transform: "scale(1.08)" }}
-                  />
+                  <HeroVisualization />
                 </div>
               </div>
 
