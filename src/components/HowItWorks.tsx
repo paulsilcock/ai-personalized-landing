@@ -88,11 +88,21 @@ const HowItWorks: React.FC = () => {
               <div className="w-full md:w-1/2">
                 <div className="relative rounded-xl overflow-hidden">
                   {step.image && (
-                    <img
-                      src={step.image}
-                      alt={step.title}
-                      className="w-full h-auto rounded-lg"
-                    />
+                    step.number === "02" ? (
+                      <div className="rounded-2xl p-[38px] bg-gradient-to-r from-blue-500 to-purple-500">
+                        <img
+                          src={step.image}
+                          alt={step.title}
+                          className="w-full h-auto rounded-xl bg-white"
+                        />
+                      </div>
+                    ) : (
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full h-auto rounded-lg"
+                      />
+                    )
                   )}
 
                   {step.video && (
