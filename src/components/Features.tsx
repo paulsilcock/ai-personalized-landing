@@ -6,7 +6,7 @@ const caseStudyData = [{
   metric: "+$2.1M in pipeline",
   title: "How Brex Could Drive 340% Pipeline Growth with AI Personalization",
   company: "Brex",
-  logo: "/lovable-uploads/bd1d1039-eb4d-4b70-aeae-8ccff7695420.png",
+  logo: "/lovable-uploads/42eb5ff2-f4b6-4a77-925e-bc9a2f4905dd.png",
   website: "brex.com",
   colorScheme: "bg-purple-500/80 hover:bg-purple-600/90"
 }, {
