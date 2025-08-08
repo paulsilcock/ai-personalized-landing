@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroVisualization = () => {
   return (
-    <div style={{ width: '100%', height: '100vh', position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+    <div style={{ width: '100%', height: '100vh', position: 'relative', overflow: 'hidden' }}>
       <svg
         width="100%"
         height="100%"
@@ -11,229 +11,209 @@ const HeroVisualization = () => {
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
       >
         <defs>
-          {/* Gradient for strings */}
-          <linearGradient id="stringGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#a78bfa', stopOpacity: 0.8 }} />
-            <stop offset="50%" style={{ stopColor: '#818cf8', stopOpacity: 0.6 }} />
-            <stop offset="100%" style={{ stopColor: '#60a5fa', stopOpacity: 0.4 }} />
+          <linearGradient id="purpleBlue1" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" style={{ stopColor: '#9333ea', stopOpacity: 1 }} />
+            <stop offset="30%" style={{ stopColor: '#7c3aed', stopOpacity: 0.9 }} />
+            <stop offset="60%" style={{ stopColor: '#6366f1', stopOpacity: 0.8 }} />
+            <stop offset="100%" style={{ stopColor: '#3b82f6', stopOpacity: 0.7 }} />
           </linearGradient>
           
-          <linearGradient id="stringGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{ stopColor: '#c084fc', stopOpacity: 0.7 }} />
-            <stop offset="50%" style={{ stopColor: '#a78bfa', stopOpacity: 0.5 }} />
-            <stop offset="100%" style={{ stopColor: '#93c5fd', stopOpacity: 0.3 }} />
+          <linearGradient id="purpleBlue2" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" style={{ stopColor: '#a855f7', stopOpacity: 0.9 }} />
+            <stop offset="50%" style={{ stopColor: '#8b5cf6', stopOpacity: 0.8 }} />
+            <stop offset="100%" style={{ stopColor: '#60a5fa', stopOpacity: 0.6 }} />
           </linearGradient>
           
-          <linearGradient id="stringGradient3" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: '#fbbf24', stopOpacity: 0.6 }} />
-            <stop offset="50%" style={{ stopColor: '#f59e0b', stopOpacity: 0.4 }} />
-            <stop offset="100%" style={{ stopColor: '#dc2626', stopOpacity: 0.2 }} />
+          <linearGradient id="purpleBlue3" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" style={{ stopColor: '#c084fc', stopOpacity: 0.8 }} />
+            <stop offset="50%" style={{ stopColor: '#a78bfa', stopOpacity: 0.7 }} />
+            <stop offset="100%" style={{ stopColor: '#93c5fd', stopOpacity: 0.5 }} />
           </linearGradient>
         </defs>
 
-        {/* Flowing string waves */}
-        {/* String 1 */}
+        {/* Main thick wave 1 */}
         <path
-          d="M-100,200 Q300,250 600,200 T1200,250"
-          stroke="url(#stringGradient1)"
-          strokeWidth="3"
+          d="M-200,900 Q200,600 600,400 T1400,-100"
+          stroke="url(#purpleBlue1)"
+          strokeWidth="80"
           fill="none"
-          opacity="0.8"
+          opacity="0.3"
         >
           <animate
             attributeName="d"
-            values="M-100,200 Q300,250 600,200 T1200,250;
-                    M-100,250 Q300,200 600,250 T1200,200;
-                    M-100,200 Q300,250 600,200 T1200,250"
-            dur="4s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 2 */}
-        <path
-          d="M-100,300 Q350,350 700,300 T1200,350"
-          stroke="url(#stringGradient2)"
-          strokeWidth="4"
-          fill="none"
-          opacity="0.7"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,300 Q350,350 700,300 T1200,350;
-                    M-100,350 Q350,300 700,350 T1200,300;
-                    M-100,300 Q350,350 700,300 T1200,350"
-            dur="5s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 3 */}
-        <path
-          d="M-100,400 Q400,500 800,400 T1200,500"
-          stroke="url(#stringGradient1)"
-          strokeWidth="2"
-          fill="none"
-          opacity="0.6"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,400 Q400,500 800,400 T1200,500;
-                    M-100,450 Q400,400 800,450 T1200,400;
-                    M-100,400 Q400,500 800,400 T1200,500"
-            dur="6s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 4 - diagonal */}
-        <path
-          d="M-100,600 Q300,400 600,300 T1200,100"
-          stroke="url(#stringGradient3)"
-          strokeWidth="2.5"
-          fill="none"
-          opacity="0.5"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,600 Q300,400 600,300 T1200,100;
-                    M-100,550 Q300,450 600,350 T1200,150;
-                    M-100,600 Q300,400 600,300 T1200,100"
-            dur="7s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 5 */}
-        <path
-          d="M-100,100 Q250,150 500,100 T1200,150"
-          stroke="url(#stringGradient2)"
-          strokeWidth="3"
-          fill="none"
-          opacity="0.6"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,100 Q250,150 500,100 T1200,150;
-                    M-100,150 Q250,100 500,150 T1200,100;
-                    M-100,100 Q250,150 500,100 T1200,150"
-            dur="3.5s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 6 - another diagonal */}
-        <path
-          d="M-100,50 Q400,250 700,450 T1200,650"
-          stroke="url(#stringGradient1)"
-          strokeWidth="2"
-          fill="none"
-          opacity="0.4"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,50 Q400,250 700,450 T1200,650;
-                    M-100,100 Q400,300 700,500 T1200,700;
-                    M-100,50 Q400,250 700,450 T1200,650"
+            values="M-200,900 Q200,600 600,400 T1400,-100;M-200,900 Q250,650 600,450 T1400,-100;M-200,900 Q200,600 600,400 T1400,-100"
             dur="8s"
             repeatCount="indefinite"
           />
         </path>
 
-        {/* String 7 */}
+        {/* Main thick wave 2 */}
         <path
-          d="M-100,500 Q300,550 600,500 T1200,550"
-          stroke="url(#stringGradient3)"
-          strokeWidth="3.5"
-          fill="none"
-          opacity="0.5"
-        >
-          <animate
-            attributeName="d"
-            values="M-100,500 Q300,550 600,500 T1200,550;
-                    M-100,550 Q300,500 600,550 T1200,500;
-                    M-100,500 Q300,550 600,500 T1200,550"
-            dur="4.5s"
-            repeatCount="indefinite"
-          />
-        </path>
-
-        {/* String 8 - crossing wave */}
-        <path
-          d="M-100,700 Q500,500 900,300 T1200,200"
-          stroke="url(#stringGradient2)"
-          strokeWidth="1.5"
+          d="M-300,850 Q300,550 700,350 T1300,-50"
+          stroke="url(#purpleBlue2)"
+          strokeWidth="60"
           fill="none"
           opacity="0.4"
         >
           <animate
             attributeName="d"
-            values="M-100,700 Q500,500 900,300 T1200,200;
-                    M-100,650 Q500,450 900,250 T1200,150;
-                    M-100,700 Q500,500 900,300 T1200,200"
+            values="M-300,850 Q300,550 700,350 T1300,-50;M-300,850 Q350,500 700,300 T1300,-50;M-300,850 Q300,550 700,350 T1300,-50"
+            dur="6s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Medium wave 3 */}
+        <path
+          d="M-100,950 Q400,650 800,450 T1500,0"
+          stroke="url(#purpleBlue3)"
+          strokeWidth="40"
+          fill="none"
+          opacity="0.5"
+        >
+          <animate
+            attributeName="d"
+            values="M-100,950 Q400,650 800,450 T1500,0;M-100,950 Q450,700 800,500 T1500,0;M-100,950 Q400,650 800,450 T1500,0"
+            dur="7s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Flowing string 4 */}
+        <path
+          d="M-400,800 Q100,500 500,300 T1200,-200"
+          stroke="url(#purpleBlue1)"
+          strokeWidth="25"
+          fill="none"
+          opacity="0.6"
+        >
+          <animate
+            attributeName="d"
+            values="M-400,800 Q100,500 500,300 T1200,-200;M-400,800 Q150,550 500,350 T1200,-200;M-400,800 Q100,500 500,300 T1200,-200"
+            dur="5s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Flowing string 5 */}
+        <path
+          d="M-50,1000 Q500,700 900,500 T1600,100"
+          stroke="url(#purpleBlue2)"
+          strokeWidth="35"
+          fill="none"
+          opacity="0.4"
+        >
+          <animate
+            attributeName="d"
+            values="M-50,1000 Q500,700 900,500 T1600,100;M-50,1000 Q550,650 900,450 T1600,100;M-50,1000 Q500,700 900,500 T1600,100"
             dur="9s"
             repeatCount="indefinite"
           />
         </path>
 
-        {/* Additional thin strings for detail */}
+        {/* Thin accent string 6 */}
         <path
-          d="M-100,350 Q400,380 800,350 T1200,380"
-          stroke="rgba(255,255,255,0.3)"
-          strokeWidth="1"
+          d="M-150,750 Q250,450 650,250 T1350,-150"
+          stroke="url(#purpleBlue3)"
+          strokeWidth="15"
           fill="none"
+          opacity="0.7"
         >
           <animate
             attributeName="d"
-            values="M-100,350 Q400,380 800,350 T1200,380;
-                    M-100,380 Q400,350 800,380 T1200,350;
-                    M-100,350 Q400,380 800,350 T1200,380"
-            dur="3s"
+            values="M-150,750 Q250,450 650,250 T1350,-150;M-150,750 Q300,500 650,300 T1350,-150;M-150,750 Q250,450 650,250 T1350,-150"
+            dur="4s"
             repeatCount="indefinite"
           />
         </path>
 
+        {/* Thin accent string 7 */}
         <path
-          d="M-100,250 Q350,280 700,250 T1200,280"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="1"
+          d="M-250,700 Q350,400 750,200 T1450,-100"
+          stroke="url(#purpleBlue1)"
+          strokeWidth="10"
           fill="none"
+          opacity="0.8"
         >
           <animate
             attributeName="d"
-            values="M-100,250 Q350,280 700,250 T1200,280;
-                    M-100,280 Q350,250 700,280 T1200,250;
-                    M-100,250 Q350,280 700,250 T1200,280"
-            dur="5.5s"
+            values="M-250,700 Q350,400 750,200 T1450,-100;M-250,700 Q400,350 750,150 T1450,-100;M-250,700 Q350,400 750,200 T1450,-100"
+            dur="6s"
             repeatCount="indefinite"
           />
         </path>
 
-        {/* Glowing dots moving along paths */}
-        <circle r="4" fill="rgba(255,255,255,0.8)">
-          <animateMotion
-            path="M-100,200 Q300,250 600,200 T1200,250"
+        {/* Very thin detail string 8 */}
+        <path
+          d="M0,800 Q400,500 800,300 T1400,0"
+          stroke="url(#purpleBlue2)"
+          strokeWidth="5"
+          fill="none"
+          opacity="0.9"
+        >
+          <animate
+            attributeName="d"
+            values="M0,800 Q400,500 800,300 T1400,0;M0,800 Q450,550 800,350 T1400,0;M0,800 Q400,500 800,300 T1400,0"
+            dur="3.5s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Additional thin strings for texture */}
+        <path
+          d="M-500,600 Q0,300 400,100 T1100,-300"
+          stroke="url(#purpleBlue3)"
+          strokeWidth="8"
+          fill="none"
+          opacity="0.6"
+        >
+          <animate
+            attributeName="d"
+            values="M-500,600 Q0,300 400,100 T1100,-300;M-500,600 Q50,350 400,150 T1100,-300;M-500,600 Q0,300 400,100 T1100,-300"
             dur="10s"
+            repeatCount="indefinite"
+          />
+        </path>
+
+        {/* Glowing dots traveling along the diagonal paths */}
+        <circle r="8" fill="rgba(147,51,234,0.9)">
+          <animateMotion
+            path="M-200,900 Q200,600 600,400 T1400,-100"
+            dur="12s"
             repeatCount="indefinite"
           />
           <animate
             attributeName="opacity"
-            values="0;1;0"
-            dur="10s"
+            values="0;1;1;0"
+            dur="12s"
             repeatCount="indefinite"
           />
         </circle>
 
-        <circle r="3" fill="rgba(168,85,247,0.9)">
+        <circle r="6" fill="rgba(99,102,241,0.9)">
           <animateMotion
-            path="M-100,400 Q400,500 800,400 T1200,500"
-            dur="12s"
+            path="M-100,950 Q400,650 800,450 T1500,0"
+            dur="15s"
             repeatCount="indefinite"
           />
           <animate
             attributeName="opacity"
-            values="0;1;0"
-            dur="12s"
+            values="0;1;1;0"
+            dur="15s"
+            repeatCount="indefinite"
+          />
+        </circle>
+
+        <circle r="5" fill="rgba(59,130,246,0.9)">
+          <animateMotion
+            path="M-250,700 Q350,400 750,200 T1450,-100"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="opacity"
+            values="0;1;1;0"
+            dur="10s"
             repeatCount="indefinite"
           />
         </circle>
