@@ -69,7 +69,7 @@ const Features: React.FC = () => {
               </div>
               
               <div className="mt-4 inline-flex items-center text-white/80 group-hover:text-white transition-colors">
-                View Demo <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </a>)}
         </div>
