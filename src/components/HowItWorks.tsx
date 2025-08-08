@@ -86,7 +86,7 @@ const HowItWorks: React.FC = () => {
               </div>
 
               <div className="w-full md:w-1/2">
-                <div className="relative bg-white shadow-lg rounded-xl p-4 overflow-hidden">
+                <div className="relative rounded-xl overflow-hidden">
                   {step.image && (
                     <img
                       src={step.image}
