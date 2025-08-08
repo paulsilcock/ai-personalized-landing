@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroVisualization = () => {
   return (
-    <div style={{ width: '100%', height: '100vh', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ width: '100%', height: '100vh', position: 'relative', overflow: 'hidden', backgroundColor: '#FDFEFF' }}>
       <svg
         width="100%"
         height="100%"
