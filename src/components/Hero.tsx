@@ -31,22 +31,6 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-radial from-craftera-purple/20 to-transparent rounded-full blur-3xl"></div>
 
             <div className="relative w-full">
-              {/* Referring page analytics overlay */}
-              <div className="absolute -top-10 -left-4 z-10 animate-float hidden md:block">
-                <div className="bg-white rounded-lg shadow-lg p-3 text-xs">
-                  <div className="flex items-center gap-2 font-medium text-gray-800">
-                    <div className="w-3 h-3 bg-craftera-purple rounded-full"></div>
-                    <span>
-                      Referring Page: businessexpert.co.uk/cot-vs-amex
-                    </span>
-                  </div>
-                  <div className="mt-1 ml-5 text-gray-500">
-                    <div className="flex items-center justify-between">
-                      <span>Visitors: 213</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* AI personalized page */}
               <div className="bg-white rounded-xl transform transition-all duration-500 ">
