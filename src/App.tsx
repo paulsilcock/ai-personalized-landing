@@ -8,6 +8,9 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Demo from "./pages/Demo";
 import NotFound from "./pages/NotFound";
+import HubSpotCase from "./pages/case-studies/HubSpotCase";
+import BrexCase from "./pages/case-studies/BrexCase";
+import NotionCase from "./pages/case-studies/NotionCase";
 import { PostHogProvider } from "posthog-js/react";
 import { LOCAL_STORAGE_EVENT } from "./hooks/use-user-id";
 
@@ -38,14 +41,17 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <TooltipProvider>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/demo/:demoUrl" element={<Demo />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/demo/:demoUrl" element={<Demo />} />
+              <Route path="/case/hubspot" element={<HubSpotCase />} />
+              <Route path="/case/brex" element={<BrexCase />} />
+              <Route path="/case/notion" element={<NotionCase />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           <Toaster />
           <Sonner />
         </TooltipProvider>
