@@ -6,6 +6,7 @@ interface Step {
   description: string;
   image: string | null;
   video: string | null;
+  poster?: string | null;
   id: string;
 }
 
@@ -43,7 +44,8 @@ const steps: Step[] = [
     description:
       "Target accounts automatically see personalized experiences that drive them to take action",
     image: null,
-    video: "preview-output",
+    video: "step4",
+    poster: "ste4.webp",
     id: "how-it-works-activate-convert",
   },
 ];
@@ -111,6 +113,7 @@ const HowItWorks: React.FC = () => {
                       loop
                       muted
                       playsInline
+                      poster={step.poster ?? undefined}
                       // style={{ transform: "scale(1.08)" }}
                       className="w-full h-auto rounded-lg"
                     >
