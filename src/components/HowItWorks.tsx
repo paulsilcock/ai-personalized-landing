@@ -24,7 +24,7 @@ const steps: Step[] = [
     title: "Connect Your Data",
     description:
       "Import target account lists, LinkedIn Ads, or keywords via CSV",
-    image: "/lovable-uploads/3bee3b18-2b37-496b-88b4-10e01e91c600.png",
+    image: "/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png",
     video: null,
     id: "how-it-works-connect-data",
   },
