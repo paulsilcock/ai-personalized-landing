@@ -193,10 +193,10 @@ const BrexCase: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <a className="group rounded-xl border p-6 bg-white hover:bg-muted/10 transition-all duration-300 hover:shadow-lg" href="/case/hubspot">
                 <div className="flex items-center gap-3 mb-3">
-                  <img src="/lovable-uploads/hubspot-logo.png" alt="HubSpot logo" className="w-8 h-8 object-contain" />
+                  <img src="/lovable-uploads/hubspot-logo.svg" alt="HubSpot logo" className="w-8 h-8 object-contain" />
                   <span className="text-sm text-gray-600 font-medium">HubSpot Case Study</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-orange-600 transition-colors">Salesforce-switcher intent → engagement</h3>
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Salesforce-switcher intent → engagement</h3>
                 <p className="text-gray-600 text-sm">Messaging that matches search intent</p>
               </a>
               <a className="group rounded-xl border p-6 bg-white hover:bg-muted/10 transition-all duration-300 hover:shadow-lg" href="/case/notion">
