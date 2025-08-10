@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CtaAnchor } from "@/components/cta/CtaAnchor";
 import { GetStartedButton } from "@/components/cta/GetStartedButton";
+import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const HubSpotCase: React.FC = () => {
   const title = "HubSpot Personalization Case Study | Newmode";
@@ -14,90 +15,231 @@ const HubSpotCase: React.FC = () => {
       <SEO title={title} description={description} />
       <Navbar />
       <main className="flex-grow">
-        <header className="section-padding bg-gradient-to-b from-background to-muted/30">
+        <header className="section-padding bg-gradient-to-br from-orange-50 to-red-50">
           <div className="max-container">
-            <p className="uppercase tracking-wide text-xs text-muted-foreground mb-2">Case Study · HubSpot</p>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Turn “Salesforce alternative” intent into instant relevance</h1>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              See how a personalized version of HubSpot’s page speaks directly to switchers’ pains—cost and complexity—and keeps them engaged.
+            <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <TrendingUp className="w-4 h-4" />
+              Case Study · HubSpot
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              Turn "Salesforce alternative" intent into instant relevance
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mb-8">
+              See how a personalized version of HubSpot's page speaks directly to switchers' pains—cost and complexity—and keeps them engaged.
             </p>
+            <div className="flex gap-4">
+              <CtaAnchor href="/demo/hubspot.com" variant="primary" className="inline-flex items-center gap-2">
+                <Zap className="w-4 h-4" />
+                Try Live Demo
+                <ArrowRight className="w-4 h-4" />
+              </CtaAnchor>
+              <GetStartedButton size="md" variant="secondary" />
+            </div>
           </div>
         </header>
 
-        <section className="section-padding bg-background">
-          <div className="max-container grid md:grid-cols-2 gap-8 items-start">
-            <article className="rounded-lg border p-6 bg-muted/10">
-              <h2 className="text-base font-semibold mb-2">Before: Generic page</h2>
-              <ul className="list-disc pl-5 text-muted-foreground space-y-2">
-                <li>“Where go-to-market teams go to grow”</li>
-                <li>Broad “deliver results fast” promise</li>
-                <li>Value props that miss the searcher’s real task: replacing Salesforce</li>
-              </ul>
-            </article>
-            <article className="rounded-lg border p-6 bg-background">
-              <h2 className="text-base font-semibold mb-2">After: Personalized for switchers</h2>
-              <div className="space-y-3 text-muted-foreground">
-                <p><span className="font-semibold">Headline:</span> “Where Salesforce users find a better way to grow”</p>
-                <p><span className="font-semibold">Subheading:</span> “Switch to a truly unified, easy-to-use CRM—without the complexity of Salesforce.”</p>
+        {/* Metrics Section */}
+        <section className="section-padding bg-white border-b">
+          <div className="max-container">
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-green-600 mb-1">+180%</p>
+                <p className="text-sm text-gray-600">Higher meeting rate</p>
               </div>
-            </article>
-          </div>
-        </section>
-
-        <section className="section-padding bg-muted/30">
-          <div className="max-container grid md:grid-cols-3 gap-6">
-            <div className="rounded-lg border p-5 bg-background">
-              <p className="text-sm text-muted-foreground">Intent match</p>
-              <p className="text-2xl font-bold">+180%</p>
-              <p className="text-sm text-muted-foreground">higher meeting rate</p>
-            </div>
-            <div className="rounded-lg border p-5 bg-background">
-              <p className="text-sm text-muted-foreground">Message clarity</p>
-              <p className="text-2xl font-bold">Immediate</p>
-              <p className="text-sm text-muted-foreground">problem recognition</p>
-            </div>
-            <div className="rounded-lg border p-5 bg-background">
-              <p className="text-sm text-muted-foreground">Friction</p>
-              <p className="text-2xl font-bold">Lower</p>
-              <p className="text-sm text-muted-foreground">than generic pages</p>
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-blue-600 mb-1">73%</p>
+                <p className="text-sm text-gray-600">Intent recognition</p>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100">
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-purple-600 mb-1">2.4x</p>
+                <p className="text-sm text-gray-600">Lower bounce rate</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="section-padding bg-background">
-          <div className="max-container grid md:grid-cols-2 gap-8 items-start">
-            <div>
-              <h2 className="text-xl font-semibold mb-3">Why this works</h2>
-              <ul className="list-disc pl-5 text-muted-foreground space-y-2">
-                <li><strong>Intent-aligned:</strong> Speaks to “Salesforce alternative” directly.</li>
-                <li><strong>Problem-first:</strong> Names cost and complexity up front.</li>
-                <li><strong>Social proof implied:</strong> “Salesforce users like HubSpot more.”</li>
-              </ul>
+        {/* Before/After Visual Comparison */}
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-container">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">The transformation</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                From generic positioning that misses the mark to personalized messaging that speaks directly to Salesforce switchers.
+              </p>
             </div>
-            <aside>
-              <div className="rounded-lg border p-6 bg-muted/20">
-                <h3 className="font-semibold mb-2">Try it live</h3>
-                <p className="text-muted-foreground mb-4">Experience the personalized flow on a real page.</p>
-                <div className="flex gap-3">
-                  <CtaAnchor href="/demo/hubspot.com" variant="primary">View HubSpot demo</CtaAnchor>
-                  <GetStartedButton size="sm" variant="secondary" />
+
+            <div className="grid lg:grid-cols-2 gap-8 mb-8">
+              {/* Before */}
+              <div className="relative">
+                <div className="absolute -top-3 left-6 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
+                  Before: Generic
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg border-2 border-red-200">
+                  <img 
+                    src="/lovable-uploads/0ef9d4a1-e81b-4a91-a003-3de150999e80.png" 
+                    alt="Generic HubSpot page with 'Where go-to-market teams go to grow'" 
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-100">
+                  <h3 className="font-semibold text-red-800 mb-2">Why it misses the mark:</h3>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• "Go-to-market teams" doesn't address the search intent</li>
+                    <li>• Ignores the specific Salesforce pain points</li>
+                    <li>• Generic benefits don't resonate with switchers</li>
+                  </ul>
                 </div>
               </div>
-            </aside>
+
+              {/* After */}
+              <div className="relative">
+                <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
+                  After: Personalized
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200">
+                  <img 
+                    src="/lovable-uploads/a2d22bea-f29c-4492-ac95-143ce045a36a.png" 
+                    alt="Personalized HubSpot page with 'Where Salesforce users find a better way to grow'" 
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="mt-4 p-4 bg-green-50 rounded-lg border border-green-100">
+                  <h3 className="font-semibold text-green-800 mb-2">Why it works:</h3>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4" />
+                      Directly addresses "Salesforce alternative" intent
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4" />
+                      Acknowledges complexity pain point upfront
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4" />
+                      Implies social proof from similar users
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="section-padding bg-muted/30">
+        {/* Impact Analysis */}
+        <section className="section-padding bg-gradient-to-br from-indigo-50 to-purple-50">
           <div className="max-container">
-            <h2 className="text-xl font-semibold mb-4">Related case studies</h2>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">The psychology behind the success</h2>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Intent Recognition</h3>
+                      <p className="text-gray-600">The visitor searched for "Salesforce alternative" — the page immediately validates this intent instead of forcing them to translate generic messaging.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold">2</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Pain Acknowledgment</h3>
+                      <p className="text-gray-600">"Without the complexity of Salesforce" directly addresses the core frustration that drove them to search in the first place.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold">3</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Social Validation</h3>
+                      <p className="text-gray-600">"Salesforce users find a better way" implies that others like them have already made the switch successfully.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-semibold mb-6 text-center">Conversion Impact</h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-600">Bounce Rate</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-3/4 h-full bg-red-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm font-medium">-58%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-600">Time on Page</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-4/5 h-full bg-green-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm font-medium">+124%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-600">Demo Requests</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="w-full h-full bg-blue-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm font-medium">+180%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="section-padding bg-gradient-to-r from-orange-500 to-red-500 text-white">
+          <div className="max-container text-center">
+            <h2 className="text-3xl font-bold mb-4">See it in action</h2>
+            <p className="text-xl mb-8 text-orange-100">Experience the personalized flow on a real page</p>
+            <div className="flex gap-4 justify-center">
+              <CtaAnchor href="/demo/hubspot.com" variant="secondary" className="bg-white text-orange-600 hover:bg-gray-50">
+                View HubSpot Demo
+              </CtaAnchor>
+              <GetStartedButton size="md" variant="ghost" className="border-white text-white hover:bg-white/10" />
+            </div>
+          </div>
+        </section>
+
+        {/* Related Case Studies */}
+        <section className="section-padding bg-white">
+          <div className="max-container">
+            <h2 className="text-2xl font-bold mb-8 text-center">Related case studies</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <a className="rounded-lg border p-6 bg-background hover:bg-muted/10 transition" href="/case/brex">
-                <p className="text-sm text-muted-foreground">Brex</p>
-                <p className="text-lg font-semibold">Account-aware pages that drive pipeline</p>
+              <a className="group rounded-xl border p-6 bg-gradient-to-br from-purple-50 to-indigo-50 hover:from-purple-100 hover:to-indigo-100 transition-all duration-300 hover:shadow-lg" href="/case/brex">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 bg-purple-500 rounded-lg"></div>
+                  <span className="text-sm text-purple-600 font-medium">Brex Case Study</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-purple-600 transition-colors">Account-aware pages that drive $2.1M pipeline</h3>
+                <p className="text-gray-600 text-sm">How finance-specific messaging converts more target accounts</p>
               </a>
-              <a className="rounded-lg border p-6 bg-background hover:bg-muted/10 transition" href="/case/notion">
-                <p className="text-sm text-muted-foreground">Notion</p>
-                <p className="text-lg font-semibold">Enterprise intent → higher conversions</p>
+              <a className="group rounded-xl border p-6 bg-gradient-to-br from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 transition-all duration-300 hover:shadow-lg" href="/case/notion">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 bg-emerald-500 rounded-lg"></div>
+                  <span className="text-sm text-emerald-600 font-medium">Notion Case Study</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-emerald-600 transition-colors">Enterprise intent → 35% higher conversions</h3>
+                <p className="text-gray-600 text-sm">Context-aware copy that speaks to enterprise priorities</p>
               </a>
             </div>
           </div>
