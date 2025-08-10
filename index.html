@@ -33,40 +33,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Reditus - old algomo site snippet - to be changed  -->
-  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "fa74e262-1dfc-401f-9994-4166c94724ea"); gr("track", "pageview");</script>
+  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.crossOrigin = "anonymous"; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "fa74e262-1dfc-401f-9994-4166c94724ea"); gr("track", "pageview");</script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NTMVNCV1Y"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NTMVNCV1Y" crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-9NTMVNCV1Y');
   </script>
-
-
+  
+  <script>
+    window.addEventListener('error', function (e) {
+      if (e && e.message === 'Script error.' && !e.filename) {
+        console.warn('[Third-party script error suppressed]', e);
+        return true;
+      }
+    });
+    window.addEventListener('unhandledrejection', function (e) {
+      console.warn('[Unhandled promise rejection]', e.reason);
+    });
+  </script>
+  
   <script>
   !function(){var e="https://rest.happierleads.com/v3/script?clientId=e2ZGJsgqZJDku3KjJZ4rDd&version=4.0.0",
   t=document.createElement("script");window.location.protocol.split(":")[0];
-  t.src=e;var c=document.getElementsByTagName("script")[0];
+  t.src=e; t.crossOrigin="anonymous"; var c=document.getElementsByTagName("script")[0];
   t.async = true;
   t.onload = function(){ new Happierleads.default };
   c.parentNode.insertBefore(t,c)}();
   </script>
      
 
-  <script src="https://v2.midbound.ai/api/emitter/cmc345c8d0001s601hx34cprt" async></script>
-  <script>!function () { var reb2b = window.reb2b = window.reb2b || []; if (reb2b.invoked) return; reb2b.invoked = true; reb2b.methods = ["identify", "collect"]; reb2b.factory = function (method) { return function () { var args = Array.prototype.slice.call(arguments); args.unshift(method); reb2b.push(args); return reb2b; }; }; for (var i = 0; i < reb2b.methods.length; i++) { var key = reb2b.methods[i]; reb2b[key] = reb2b.factory(key); } reb2b.load = function (key) { var script = document.createElement("script"); script.type = "text/javascript"; script.async = true; script.src = "https://b2bjsstore.s3.us-west-2.amazonaws.com/b/" + key + "/XOE9GHV475OM.js.gz"; var first = document.getElementsByTagName("script")[0]; first.parentNode.insertBefore(script, first); }; reb2b.SNIPPET_VERSION = "1.0.1"; reb2b.load("XOE9GHV475OM"); }();</script>
+  <script src="https://v2.midbound.ai/api/emitter/cmc345c8d0001s601hx34cprt" async crossorigin="anonymous"></script>
+  <script>!function () { var reb2b = window.reb2b = window.reb2b || []; if (reb2b.invoked) return; reb2b.invoked = true; reb2b.methods = ["identify", "collect"]; reb2b.factory = function (method) { return function () { var args = Array.prototype.slice.call(arguments); args.unshift(method); reb2b.push(args); return reb2b; }; }; for (var i = 0; i < reb2b.methods.length; i++) { var key = reb2b.methods[i]; reb2b[key] = reb2b.factory(key); } reb2b.load = function (key) { var script = document.createElement("script"); script.type = "text/javascript"; script.async = true; script.src = "https://b2bjsstore.s3.us-west-2.amazonaws.com/b/" + key + "/XOE9GHV475OM.js.gz"; script.crossOrigin = "anonymous"; var first = document.getElementsByTagName("script")[0]; first.parentNode.insertBefore(script, first); }; reb2b.SNIPPET_VERSION = "1.0.1"; reb2b.load("XOE9GHV475OM"); }();</script>
   <script id="warmly-script-loader"
-    src="https://opps-widget.getwarmly.com/warmly.js?clientId=cc0368de1be159f20366cb5e3f611fae" defer></script>
+    src="https://opps-widget.getwarmly.com/warmly.js?clientId=cc0368de1be159f20366cb5e3f611fae" defer crossorigin="anonymous"></script>
   <script>
-    !function (e, r) { try { if (e.vector) return void console.log("Vector snippet included more than once."); var t = {}; t.q = t.q || []; for (var o = ["load", "identify", "on"], n = function (e) { return function () { var r = Array.prototype.slice.call(arguments); t.q.push([e, r]) } }, c = 0; c < o.length; c++) { var a = o[c]; t[a] = n(a) } if (e.vector = t, !t.loaded) { var i = r.createElement("script"); i.type = "text/javascript", i.async = !0, i.src = "https://cdn.vector.co/pixel.js"; var l = r.getElementsByTagName("script")[0]; l.parentNode.insertBefore(i, l), t.loaded = !0 } } catch (e) { console.error("Error loading Vector:", e) } }(window, document);
+    !function (e, r) { try { if (e.vector) return void console.log("Vector snippet included more than once."); var t = {}; t.q = t.q || []; for (var o = ["load", "identify", "on"], n = function (e) { return function () { var r = Array.prototype.slice.call(arguments); t.q.push([e, r]) } }, c = 0; c < o.length; c++) { var a = o[c]; t[a] = n(a) } if (e.vector = t, !t.loaded) { var i = r.createElement("script"); i.type = "text/javascript", i.async = !0, i.src = "https://cdn.vector.co/pixel.js"; i.crossOrigin = "anonymous"; var l = r.getElementsByTagName("script")[0]; l.parentNode.insertBefore(i, l), t.loaded = !0 } } catch (e) { console.error("Error loading Vector:", e) } }(window, document);
     vector.load("e2bb1bed-3384-46d9-a9db-e8b5ca4e6abd");
   </script>
 
   <!-- Reddit Pixel -->
   <script>
-    !function (w, d) { if (!w.rdt) { var p = w.rdt = function () { p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments) }; p.callQueue = []; var t = d.createElement("script"); t.src = "https://www.redditstatic.com/ads/pixel.js", t.async = !0; var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s) } }(window, document); rdt('init', 'a2_hamn6yl13fyz'); rdt('track', 'PageVisit');
+    !function (w, d) { if (!w.rdt) { var p = w.rdt = function () { p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments) }; p.callQueue = []; var t = d.createElement("script"); t.src = "https://www.redditstatic.com/ads/pixel.js", t.async = !0; t.crossOrigin = "anonymous"; var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s) } }(window, document); rdt('init', 'a2_hamn6yl13fyz'); rdt('track', 'PageVisit');
   </script>
   <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
   <!-- End Reddit Pixel -->
