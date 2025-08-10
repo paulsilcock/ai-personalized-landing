@@ -30,34 +30,6 @@ const HubSpotCase: React.FC = () => {
           </div>
         </header>
 
-        {/* Metrics Section */}
-        <section className="section-padding bg-white border-b">
-          <div className="max-container">
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100">
-                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <TrendingUp className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-3xl font-bold text-green-600 mb-1">+180%</p>
-                <p className="text-sm text-gray-600">Higher meeting rate</p>
-              </div>
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
-                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-3xl font-bold text-blue-600 mb-1">73%</p>
-                <p className="text-sm text-gray-600">Intent recognition</p>
-              </div>
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100">
-                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-3xl font-bold text-purple-600 mb-1">2.4x</p>
-                <p className="text-sm text-gray-600">Lower bounce rate</p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Before/After Visual Comparison */}
         <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
@@ -198,6 +170,35 @@ const HubSpotCase: React.FC = () => {
           </div>
         </section>
 
+        {/* Results Section */}
+        <section className="section-padding bg-background border-t">
+          <div className="max-container animate-fade-in">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-green-600 mb-1">+180%</p>
+                <p className="text-sm text-gray-600">Higher meeting rate</p>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-blue-600 mb-1">83%</p>
+                <p className="text-sm text-gray-600">Intent recognition</p>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100">
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-3xl font-bold text-purple-600 mb-1">2.4x</p>
+                <p className="text-sm text-gray-600">Lower bounce rate</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-orange-500 to-red-500 text-white">
           <div className="max-container text-center">
@@ -217,18 +218,18 @@ const HubSpotCase: React.FC = () => {
           <div className="max-container">
             <h2 className="text-2xl font-bold mb-8 text-center">Related case studies</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <a className="group rounded-xl border p-6 bg-gradient-to-br from-purple-50 to-indigo-50 hover:from-purple-100 hover:to-indigo-100 transition-all duration-300 hover:shadow-lg" href="/case/brex">
+              <a className="group rounded-xl border p-6 bg-white hover:bg-muted/10 transition-all duration-300 hover:shadow-lg hover-scale" href="/case/brex">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-purple-500 rounded-lg"></div>
-                  <span className="text-sm text-purple-600 font-medium">Brex Case Study</span>
+                  <img src="/lovable-uploads/42eb5ff2-f4b6-4a77-925e-bc9a2f4905dd.png" alt="Brex logo" className="w-8 h-8 object-contain" />
+                  <span className="text-sm text-gray-600 font-medium">Brex Case Study</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-purple-600 transition-colors">Account-aware pages that drive $2.1M pipeline</h3>
                 <p className="text-gray-600 text-sm">How finance-specific messaging converts more target accounts</p>
               </a>
-              <a className="group rounded-xl border p-6 bg-gradient-to-br from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 transition-all duration-300 hover:shadow-lg" href="/case/notion">
+              <a className="group rounded-xl border p-6 bg-white hover:bg-muted/10 transition-all duration-300 hover:shadow-lg hover-scale" href="/case/notion">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-emerald-500 rounded-lg"></div>
-                  <span className="text-sm text-emerald-600 font-medium">Notion Case Study</span>
+                  <img src="/lovable-uploads/2dd60b04-32ef-4eb6-b2b1-a8c1d85e2aff.png" alt="Notion logo" className="w-8 h-8 object-contain" />
+                  <span className="text-sm text-gray-600 font-medium">Notion Case Study</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-emerald-600 transition-colors">Enterprise intent → 35% higher conversions</h3>
                 <p className="text-gray-600 text-sm">Context-aware copy that speaks to enterprise priorities</p>
