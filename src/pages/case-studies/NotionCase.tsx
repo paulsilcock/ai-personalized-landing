@@ -15,16 +15,16 @@ const NotionCase: React.FC = () => {
       <SEO title={title} description={description} />
       <Navbar />
       <main className="flex-grow">
-        <header className="section-padding bg-gradient-to-br from-gray-50 to-zinc-100">
+        <header className="section-padding bg-gradient-to-br from-gray-900 to-black text-white">
           <div className="max-container">
-            <div className="inline-flex items-center gap-2 bg-zinc-200 text-zinc-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">
               <TrendingUp className="w-4 h-4" />
               Case Study · Notion
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-zinc-800 to-black bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Enterprise intent → clear value, faster adoption
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mb-8">
+            <p className="text-xl text-gray-300 max-w-3xl mb-8">
               How enterprise-aware copy improves clarity on security, scale, and cross-functional collaboration to lift conversions.
             </p>
           </div>
@@ -173,13 +173,15 @@ const NotionCase: React.FC = () => {
         </section>
 
         {/* CTA at bottom */}
-        <section className="section-padding bg-secondary">
+        <section className="section-padding bg-gradient-to-r from-gray-900 to-black text-white">
           <div className="max-container text-center">
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
-            <p className="text-xl mb-8 text-muted-foreground">Experience the personalized flow on a real page</p>
+            <p className="text-xl mb-8 text-gray-300">Experience the personalized flow on a real page</p>
             <div className="flex gap-4 justify-center">
-              <CtaAnchor href="/demo/notion.com/enterprise" variant="secondary">View Notion Demo</CtaAnchor>
-              <GetStartedButton size="md" variant="ghost" />
+              <CtaAnchor href="/demo/notion.com/enterprise" variant="secondary" className="bg-white text-black hover:bg-gray-50">
+                View Notion Demo
+              </CtaAnchor>
+              <GetStartedButton size="md" variant="ghost" className="border-white text-white hover:bg-white/10" />
             </div>
           </div>
         </section>
