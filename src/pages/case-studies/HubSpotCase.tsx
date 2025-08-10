@@ -27,14 +27,6 @@ const HubSpotCase: React.FC = () => {
             <p className="text-xl text-gray-600 max-w-3xl mb-8">
               See how a personalized version of HubSpot's page speaks directly to switchers' pains—cost and complexity—and keeps them engaged.
             </p>
-            <div className="flex gap-4">
-              <CtaAnchor href="/demo/hubspot.com" variant="primary" className="inline-flex items-center gap-2">
-                <Zap className="w-4 h-4" />
-                Try Live Demo
-                <ArrowRight className="w-4 h-4" />
-              </CtaAnchor>
-              <GetStartedButton size="md" variant="secondary" />
-            </div>
           </div>
         </header>
 
