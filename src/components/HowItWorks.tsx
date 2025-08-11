@@ -108,25 +108,35 @@ const HowItWorks: React.FC = () => {
                   )}
 
                   {step.video && (
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      poster={step.poster ?? undefined}
-                      // style={{ transform: "scale(1.08)" }}
-                      className="w-full h-auto rounded-lg"
-                    >
-                      <source
-                        src={step.video + ".mp4"}
-                        type="video/mp4"
-                      ></source>
-                      <source
-                        src={step.video + ".webm"}
-                        type="video/webm"
-                      ></source>
-                      Your browser does not support the video tag.
-                    </video>
+                    step.number === "04" ? (
+                      <div className="rounded-lg border border-[#644FA4] bg-[#644FA4]">
+                        <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          poster={step.poster ?? undefined}
+                          className="w-full h-auto rounded-md"
+                        >
+                          <source src={step.video + ".mp4"} type="video/mp4"></source>
+                          <source src={step.video + ".webm"} type="video/webm"></source>
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    ) : (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster={step.poster ?? undefined}
+                        className="w-full h-auto rounded-lg"
+                      >
+                        <source src={step.video + ".mp4"} type="video/mp4"></source>
+                        <source src={step.video + ".webm"} type="video/webm"></source>
+                        Your browser does not support the video tag.
+                      </video>
+                    )
                   )}
                 </div>
               </div>
