@@ -105,7 +105,7 @@ const HowItWorks: React.FC = () => {
             alignment="right"
           >
             <div
-              className="rounded-2xl bg-[#644FA4] aspect-video min-h-1 relative h-[calc(100%+64px)]"
+              className="rounded-2xl bg-[#644FA4] aspect-video min-h-1 relative"
               id="cunt"
             >
               {[0, 1, 2, 3].map((i) => (
@@ -113,9 +113,9 @@ const HowItWorks: React.FC = () => {
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
                   alt="Scale and Automate"
-                  className="absolute opacity-0 inset-8 w-[calc(100%-64px)] max-h-[calc(100%-64px)] rounded-xl bg-white animate-slide-in-out object-fit aspect-video"
+                  className="absolute opacity-0 inset-4 w-[calc(100%-32px)] max-h-[calc(100%-32px)] lg:inset-6 lg:w-[calc(100%-48px)] lg:max-h-[calc(100%-48px)] rounded-xl bg-white animate-slide-in-out object-fit aspect-video"
                   style={{
-                    boxShadow: "0px 0px 0px 10px #ffffff26",
+                    boxShadow: "0px 0px 0px 8px #ffffff26",
                     animationDelay: `${i * 2}s`,
                   }}
                 />
