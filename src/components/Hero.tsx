@@ -7,9 +7,13 @@ import { useDashLink } from "../hooks/use-dash-link";
 import { PlaygroundButton } from "./cta/PlaygroundButton";
 import { GetStartedButton } from "./cta/GetStartedButton";
 import HeroVisualization from "./HeroVisualization";
+import heroBg from "@/assets/hero-gradient.jpg";
 const Hero: React.FC = () => {
   const dashLink = useDashLink();
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <img src={heroBg} alt="AI website personalization hero background" className="w-full h-full object-cover opacity-40" loading="eager" />
+      </div>
       <div className="max-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-0 items-center">
           <div className="space-y-8">
