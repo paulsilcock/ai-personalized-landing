@@ -77,6 +77,24 @@ const BrexCase: React.FC = () => {
                 </figcaption>
               </figure>
             </div>
+            <div className="mt-8 grid lg:grid-cols-2 gap-8">
+              <div className="rounded-xl border border-red-100 bg-red-50 p-6">
+                <h3 className="text-lg font-semibold text-red-800 mb-3">Why it misses the mark</h3>
+                <ul className="list-disc pl-5 space-y-2 text-red-700">
+                  <li>Generic value props don’t speak to AI startups or finance.</li>
+                  <li>Doesn’t address spend controls, compliance, or governance.</li>
+                  <li>Lacks proof tailored to high-growth, runway-conscious teams.</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-green-100 bg-green-50 p-6">
+                <h3 className="text-lg font-semibold text-green-800 mb-3">Why it works</h3>
+                <ul className="list-disc pl-5 space-y-2 text-green-700">
+                  <li>Explicitly calls out AI startups to match visitor intent.</li>
+                  <li>Speaks to finance pains: control, compliance, and speed.</li>
+                  <li>Signals lower risk and higher relevance for qualified demos.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
