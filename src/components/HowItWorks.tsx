@@ -70,7 +70,7 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="absolute rounded-2xl p-[38px] bg-gradient-to-r from-blue-500 to-purple-500">
+            <div className="rounded-2xl p-[38px] bg-gradient-to-r from-blue-500 to-purple-500">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data"
