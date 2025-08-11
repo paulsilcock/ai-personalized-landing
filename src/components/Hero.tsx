@@ -2,12 +2,16 @@ import React from "react";
 import LandingPageEffect from "./LandingPageEffect";
 import { PlaygroundButton } from "./cta/PlaygroundButton";
 import { GetStartedButton } from "./cta/GetStartedButton";
+import HeroVisualization from "./HeroVisualization";
 import heroBg from "@/assets/hero-gradient.jpg";
 
 const Hero: React.FC = () => {
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <img src={heroBg} alt="AI website personalization hero background" className="w-full h-full object-cover opacity-50 animate-fade-in animate-float" loading="eager" />
+        <img src={heroBg} alt="AI website personalization hero background" className="absolute inset-0 w-full h-full object-cover opacity-50" loading="eager" />
+        <div className="absolute inset-0 opacity-50" aria-hidden="true">
+          <HeroVisualization />
+        </div>
       </div>
       <div className="max-container">
         <div className="grid grid-cols-1 items-center">

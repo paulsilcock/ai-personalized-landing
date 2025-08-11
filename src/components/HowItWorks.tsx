@@ -44,8 +44,8 @@ const steps: Step[] = [
     description:
       "Target accounts automatically see personalized experiences that drive them to take action",
     image: null,
-    video: "step4",
-    poster: "ste4.webp",
+    video: "/Step4",
+    poster: "/step4.webp",
     id: "how-it-works-activate-convert",
   },
 ];
