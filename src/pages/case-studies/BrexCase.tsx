@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CtaAnchor } from "@/components/cta/CtaAnchor";
 import { GetStartedButton } from "@/components/cta/GetStartedButton";
+import { useUserId } from "@/hooks/use-user-id";
 import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const BrexCase: React.FC = () => {
+  const userId = useUserId();
   const title = "Brex Personalization Case Study | Newmode";
   const description = "How ABM-tailored pages can drive pipeline growth for Brex with precise, account-aware messaging.";
 
@@ -188,7 +190,7 @@ const BrexCase: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
             <p className="text-xl mb-8 text-gray-300">Experience the personalized flow on a real page</p>
             <div className="flex gap-4 justify-center">
-              <CtaAnchor href="https://dash.newmode.ai/demo/brex.com" variant="secondary" className="bg-white text-black hover:bg-gray-50">
+              <CtaAnchor href={`https://dash.newmode.ai/demo/brex.com${userId ? `?nm_id=${userId}` : ''}`} variant="secondary" className="bg-white text-black hover:bg-gray-50">
                 View Brex Demo
               </CtaAnchor>
               <GetStartedButton size="md" variant="ghost" className="border-white text-white hover:bg-white/10" />

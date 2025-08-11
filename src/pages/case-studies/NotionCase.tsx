@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CtaAnchor } from "@/components/cta/CtaAnchor";
 import { GetStartedButton } from "@/components/cta/GetStartedButton";
+import { useUserId } from "@/hooks/use-user-id";
 import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const NotionCase: React.FC = () => {
+  const userId = useUserId();
   const title = "Notion Personalization Case Study | Newmode";
   const description = "How context-aware messaging can boost Notion’s website conversions by aligning copy with visitor intent.";
 
@@ -176,7 +178,7 @@ const NotionCase: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
             <p className="text-xl mb-8 text-gray-300">Experience the personalized flow on a real page</p>
             <div className="flex gap-4 justify-center">
-              <CtaAnchor href="https://dash.newmode.ai/demo/notion.com" variant="secondary" className="bg-white text-black hover:bg-gray-50">
+              <CtaAnchor href={`https://dash.newmode.ai/demo/notion.com/enterprise${userId ? `?nm_id=${userId}` : ''}`} variant="secondary" className="bg-white text-black hover:bg-gray-50">
                 View Notion Demo
               </CtaAnchor>
               <GetStartedButton size="md" variant="ghost" className="border-white text-white hover:bg-white/10" />
