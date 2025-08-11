@@ -8,7 +8,7 @@ import heroBg from "@/assets/hero-gradient.jpg";
 const Hero: React.FC = () => {
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <img src={heroBg} alt="AI website personalization hero background" className="absolute inset-0 w-full h-full object-cover opacity-40" loading="eager" />
+        <img src={heroBg} alt="AI website personalization hero background" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
         <div className="absolute inset-0 opacity-50" aria-hidden="true">
           <HeroVisualization />
         </div>

@@ -109,14 +109,14 @@ const HowItWorks: React.FC = () => {
 
                   {step.video && (
                     step.number === "04" ? (
-                      <div className="rounded-lg border border-[#644FA4] bg-[#644FA4]">
+                      <div className="rounded-2xl p-[38px] bg-[#644FA4]">
                         <video
                           autoPlay
                           loop
                           muted
                           playsInline
                           poster={step.poster ?? undefined}
-                          className="w-full h-auto rounded-md"
+                          className="w-full h-auto rounded-xl bg-white"
                         >
                           <source src={step.video + ".mp4"} type="video/mp4"></source>
                           <source src={step.video + ".webm"} type="video/webm"></source>
