@@ -35,8 +35,8 @@ const BrexCase: React.FC = () => {
           <div className="max-container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">The transformation</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                From a generic hero to an AI-segment specific hero that matches buyer context.
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                From generic positioning that misses the mark to personalized messaging that speaks directly to AI startups.
               </p>
             </div>
 
@@ -78,23 +78,26 @@ const BrexCase: React.FC = () => {
               </figure>
             </div>
             <div className="mt-8 grid lg:grid-cols-2 gap-8">
-              <div className="rounded-xl border border-red-100 bg-red-50 p-6">
-                <h3 className="text-lg font-semibold text-red-800 mb-3">Why it misses the mark</h3>
-                <ul className="list-disc pl-5 space-y-2 text-red-700">
-                  <li>Generic value props don’t speak to AI startups or finance.</li>
-                  <li>Doesn’t address spend controls, compliance, or governance.</li>
-                  <li>Lacks proof tailored to high-growth, runway-conscious teams.</li>
+              <div className="rounded-xl border bg-muted/30 p-6">
+                <h3 className="text-lg font-semibold mb-3 text-destructive">Why it misses the mark (Generic version - Image 2):</h3>
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                  <li>“Spend smarter. Move faster” is too vague and doesn't address specific AI startup needs</li>
+                  <li>Ignores the unique challenges of managing AI infrastructure costs and runway</li>
+                  <li>Generic benefits about control and speed don't resonate with high-growth tech ventures</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-green-100 bg-green-50 p-6">
-                <h3 className="text-lg font-semibold text-green-800 mb-3">Why it works</h3>
-                <ul className="list-disc pl-5 space-y-2 text-green-700">
-                  <li>Explicitly calls out AI startups to match visitor intent.</li>
-                  <li>Speaks to finance pains: control, compliance, and speed.</li>
-                  <li>Signals lower risk and higher relevance for qualified demos.</li>
+              <div className="rounded-xl border bg-muted/30 p-6">
+                <h3 className="text-lg font-semibold mb-3 text-primary">Why it works (Personalized version - Image 1):</h3>
+                <ul className="space-y-2 text-foreground">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5" /><span>Directly addresses AI startups with “Scale your AI startup faster”</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5" /><span>Acknowledges specific pain point: “manage AI infrastructure costs”</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5" /><span>Positions specifically for their context: “designed for high-growth tech ventures”</span></li>
                 </ul>
               </div>
             </div>
+            <p className="mt-6 text-base text-muted-foreground">
+              The personalized version speaks directly to AI startups who are searching for financial solutions that understand their unique needs — optimizing runway while scaling AI infrastructure — rather than generic spend management messaging.
+            </p>
           </div>
         </section>
 
