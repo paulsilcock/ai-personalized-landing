@@ -43,26 +43,24 @@ const NotionCase: React.FC = () => {
               {/* Before */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  Before: Universal
+                  Before: Generic
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-red-200 bg-white">
-                  <div className="p-6">
-                    <ul className="text-sm text-red-700 space-y-2">
-                      <li>• One-size-fits-all productivity language</li>
-                      <li>• Light on enterprise priorities and safeguards</li>
-                      <li>• Lacks decision-stage proof points</li>
-                    </ul>
-                  </div>
+                  <div className="aspect-video bg-gray-100" />
                 </div>
                 <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-100">
-                  <h3 className="font-semibold text-red-800 mb-2">Why it misses:</h3>
-                  <p className="text-sm text-red-700">Enterprise buyers need clarity on rollout, governance, and scale—not inspiration.</p>
+                  <h3 className="font-semibold text-red-800 mb-2">Why it misses the mark:</h3>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• One-size-fits-all productivity language</li>
+                    <li>• Light on enterprise priorities and safeguards</li>
+                    <li>• Lacks decision-stage proof points</li>
+                  </ul>
                 </div>
               </div>
               {/* After */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Enterprise-aware
+                  After: Personalized
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
                   <div className="p-6 text-gray-700 space-y-2">
