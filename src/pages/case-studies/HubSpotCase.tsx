@@ -205,7 +205,7 @@ const HubSpotCase: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
             <p className="text-xl mb-8 text-orange-100">Experience the personalized flow on a real page</p>
             <div className="flex gap-4 justify-center">
-              <CtaAnchor href="/demo/hubspot.com" variant="secondary" className="bg-white text-orange-600 hover:bg-gray-50">
+              <CtaAnchor href="https://dash.newmode.ai/demo/hubspot.com" variant="secondary" className="bg-white text-orange-600 hover:bg-gray-50">
                 View HubSpot Demo
               </CtaAnchor>
               <GetStartedButton size="md" variant="ghost" className="border-white text-white hover:bg-white/10" />
