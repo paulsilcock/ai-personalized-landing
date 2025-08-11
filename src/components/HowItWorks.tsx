@@ -70,11 +70,14 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="rounded-2xl p-[38px] bg-gradient-to-r from-blue-500 to-purple-500">
+            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 p-4 lg:p-8 rounded-2xl">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data"
                 className="w-full h-auto rounded-xl bg-white"
+                style={{
+                  boxShadow: "0px 0px 0px 8px #ffffff26",
+                }}
               />
             </div>
           </HowItWorksSection>
@@ -85,17 +88,22 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-auto rounded-lg"
-            >
-              <source src="step-3-video.mp4" type="video/mp4" />
-              <source src="step-3-video.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 p-4 lg:p-8 rounded-2xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto rounded-lg"
+                style={{
+                  boxShadow: "0px 0px 0px 8px #ffffff26",
+                }}
+              >
+                <source src="step-3-video.mp4" type="video/mp4" />
+                <source src="step-3-video.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </HowItWorksSection>
 
           <HowItWorksSection
@@ -104,16 +112,13 @@ const HowItWorks: React.FC = () => {
             description="Target accounts automatically see personalized experiences that drive them to take action"
             alignment="right"
           >
-            <div
-              className="rounded-2xl bg-[#644FA4] aspect-video min-h-1 relative"
-              id="cunt"
-            >
+            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 rounded-2xl aspect-video relative w-auto">
               {[0, 1, 2, 3].map((i) => (
                 <img
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
                   alt="Scale and Automate"
-                  className="absolute opacity-0 inset-4 w-[calc(100%-32px)] max-h-[calc(100%-32px)] lg:inset-6 lg:w-[calc(100%-48px)] lg:max-h-[calc(100%-48px)] rounded-xl bg-white animate-slide-in-out object-fit aspect-video"
+                  className="absolute opacity-0 inset-4 w-[calc(100%-32px)] max-h-[calc(100%-32px)] mx-auto lg:inset-6 lg:w-[calc(100%-64px)] lg:max-h-[calc(100%-48px)] rounded-xl bg-white animate-slide-in-out object-fit"
                   style={{
                     boxShadow: "0px 0px 0px 8px #ffffff26",
                     animationDelay: `${i * 2}s`,
