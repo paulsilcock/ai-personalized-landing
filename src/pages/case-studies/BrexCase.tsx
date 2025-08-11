@@ -36,49 +36,46 @@ const BrexCase: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">The transformation</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                From platform-first messaging to account-aware copy that speaks to finance leaders' real constraints.
+                From a generic hero to an AI-segment specific hero that matches buyer context.
               </p>
             </div>
-            <div className="grid lg:grid-cols-2 gap-8 mb-8">
+
+            <div className="grid lg:grid-cols-2 gap-8">
               {/* Before */}
-              <div className="relative">
+              <figure className="relative">
                 <div className="absolute -top-3 left-6 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  Before: Generic
+                  Before: Generic hero
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-red-200 bg-white">
-                  <div className="p-6">
-                    <ul className="text-sm text-red-700 space-y-2">
-                      <li>• Platform-first claims with little role context</li>
-                      <li>• Benefits don’t reflect budget control or policy rigor</li>
-                      <li>• Generic proof points</li>
-                    </ul>
-                  </div>
+                  <img
+                    src="/lovable-uploads/05346259-8bd8-477e-89ba-00397566f6e4.png"
+                    alt="Brex generic hero with headline 'Spend smarter. Move faster.'"
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
-                <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-100">
-                  <h3 className="font-semibold text-red-800 mb-2">Why it misses:</h3>
-                  <p className="text-sm text-red-700">Finance buyers need control, visibility, and governance—generic product value doesn’t map to their tasks.</p>
-                </div>
-              </div>
+                <figcaption className="mt-3 text-sm text-red-700 bg-red-50 rounded-lg border border-red-100 p-3">
+                  Broad value props that don’t speak directly to a specific segment or initiative.
+                </figcaption>
+              </figure>
+
               {/* After */}
-              <div className="relative">
+              <figure className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Account-aware
+                  After: AI-specific hero
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
-                  <div className="p-6 text-gray-700 space-y-2">
-                    <p><span className="font-semibold">Headline:</span> Where finance teams control spend without slowing growth</p>
-                    <p><span className="font-semibold">Subheading:</span> Purpose-built cards, limits, and real-time controls—without manual overhead.</p>
-                  </div>
+                  <img
+                    src="/lovable-uploads/7f51f46b-11c4-4d0b-8929-64aa0b9d3786.png"
+                    alt="Brex AI-focused hero with headline 'Scale your AI startup faster.'"
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
-                <div className="mt-4 p-4 bg-green-50 rounded-lg border border-green-100">
-                  <h3 className="font-semibold text-green-800 mb-2">Why it works:</h3>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Speaks to finance priorities directly</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Reduces perceived implementation friction</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Highlights governance and control</li>
-                  </ul>
-                </div>
-              </div>
+                <figcaption className="mt-3 text-sm text-green-700 bg-green-50 rounded-lg border border-green-100 p-3">
+                  Targeted messaging that aligns to AI startups, improving relevance and conversion intent.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
