@@ -23,7 +23,7 @@ const Generator: React.FC = () => {
       <main className="flex-grow">
         <header className="section-padding bg-gradient-to-br from-gray-50 to-white">
           <div className="max-container text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Landing Page Generator</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">1:1 Landing Page Personalisation Generator</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Pick a template to preview a personalized, account-aware landing page experience.
             </p>
