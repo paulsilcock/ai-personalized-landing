@@ -61,7 +61,7 @@ const HowItWorks: React.FC = () => {
               <img
                 src="/lovable-uploads/43cb5ed5-1c9e-4870-aa42-049924f48d72.png"
                 alt="Install Analytics Script — Step 1"
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-xl bg-transparent"
               />
             </div>
           </HowItWorksSection>
@@ -76,7 +76,7 @@ const HowItWorks: React.FC = () => {
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data — Step 2"
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-xl"
               />
             </div>
           </HowItWorksSection>
@@ -93,7 +93,7 @@ const HowItWorks: React.FC = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-auto block rounded-2xl"
+                className="w-full h-auto block rounded-xl"
               >
                 <source src="step-3-video.mp4" type="video/mp4" />
                 <source src="step-3-video.webm" type="video/webm" />
@@ -114,7 +114,7 @@ const HowItWorks: React.FC = () => {
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
                   alt="Scale and Automate — Step 4"
-                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out rounded-2xl"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out rounded-xl"
                   style={{
                     animationDelay: `${i * 2}s`,
                   }}
