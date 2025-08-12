@@ -24,9 +24,7 @@ const NotionCase: React.FC = () => {
               <TrendingUp className="w-4 h-4" />
               Case Study · Notion
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              The SharePoint alternative that enterprise teams actually want to use
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Turn "SharePoint alternative" intent into instant relevance</h1>
             <p className="text-xl text-gray-300 max-w-3xl mb-6">
               Migration tools ready. No more scattered files across Teams, SharePoint, and OneDrive. Everything searchable in one modern workspace.
             </p>
