@@ -34,9 +34,6 @@ const NotionCase: React.FC = () => {
               <span className="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm font-medium">
                 <Zap className="w-4 h-4 mr-1" /> 10x faster than SharePoint
               </span>
-              <CtaAnchor href="https://zcal.co/i/mwcbsuUV" variant="secondary" className="bg-white text-black hover:bg-gray-50">
-                Import from SharePoint
-              </CtaAnchor>
             </div>
           </div>
         </header>
