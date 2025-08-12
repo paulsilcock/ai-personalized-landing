@@ -26,10 +26,10 @@ const FAQ: React.FC = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
               <AccordionTrigger className="px-6 py-4 text-lg font-medium text-left">
-                How does NewMode identify visiting accounts?
+                How does newmode.ai identify visiting accounts?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                NewMode detects visitors through traffic source analysis and integrates with your existing data (CRM, email lists, LinkedIn Ads) to identify and personalize experiences automatically.
+                newmode.ai detects visitors through traffic source analysis and integrates with your existing data (CRM, email lists, LinkedIn Ads) to identify and personalize experiences automatically.
               </AccordionContent>
             </AccordionItem>
 
@@ -38,10 +38,10 @@ const FAQ: React.FC = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
               <AccordionTrigger className="px-6 py-4 text-lg font-medium text-left">
-                What websites does NewMode work with?
+                What websites does newmode.ai work with?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                NewMode works with any website that allows you to add HTML code - WordPress, Shopify, Webflow, custom websites, and more. Just add one script to your header.
+                newmode.ai works with any website that allows you to add HTML code - WordPress, Shopify, Webflow, custom websites, and more. Just add one script to your header.
               </AccordionContent>
             </AccordionItem>
 
@@ -50,7 +50,7 @@ const FAQ: React.FC = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
               <AccordionTrigger className="px-6 py-4 text-lg font-medium text-left">
-                Do I need technical knowledge to use NewMode?
+                Do I need technical knowledge to use newmode.ai?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
                 No. Our conversational AI editor lets you create personalized experiences by describing what you want in plain English. No coding or design skills required.
@@ -62,10 +62,10 @@ const FAQ: React.FC = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
               <AccordionTrigger className="px-6 py-4 text-lg font-medium text-left">
-                How is NewMode different from other personalization tools?
+                How is newmode.ai different from other personalization tools?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Most tools require element-by-element editing or separate microsite creation. NewMode transforms your entire existing website experience through simple AI conversations.
+                Most tools require element-by-element editing or separate microsite creation. newmode.ai transforms your entire existing website experience through simple AI conversations.
               </AccordionContent>
             </AccordionItem>
 
@@ -89,7 +89,7 @@ const FAQ: React.FC = () => {
                 What happens during the beta period?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Beta users get full access to NewMode for free, direct input on product development, and priority support. You'll keep grandfathered pricing when we officially launch.
+                Beta users get full access to newmode.ai for free, direct input on product development, and priority support. You'll keep grandfathered pricing when we officially launch.
               </AccordionContent>
             </AccordionItem>
 
