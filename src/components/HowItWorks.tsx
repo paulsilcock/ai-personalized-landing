@@ -109,16 +109,12 @@ const HowItWorks: React.FC = () => {
             alignment="right"
           >
             <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm aspect-video relative">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <img
+                src="/lovable-uploads/e0669f49-fddb-42bc-ae92-84e7dcc9aab0.png"
+                alt="Personalized experiences at scale preview"
                 className="absolute inset-0 w-full h-full object-cover"
-              >
-                <source src="Step4.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                loading="lazy"
+              />
             </div>
           </HowItWorksSection>
         </div>
