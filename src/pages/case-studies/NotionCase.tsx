@@ -51,15 +51,15 @@ const NotionCase: React.FC = () => {
               </p>
             </div>
             <div className="grid lg:grid-cols-2 gap-8 mb-8">
-              {/* Before: SharePoint */}
+              {/* Before: Current Notion */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  Before: SharePoint
+                  Before: Current Notion
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-red-200 bg-white">
                   <img
-                    src="/before.png"
-                    alt="Before: SharePoint cluttered interface with slow performance"
+                    src="/lovable-uploads/1ce8bbdb-8c9b-4e24-ad16-f41f94b4aaf7.png"
+                    alt="Before: Notion enterprise hero — 'Knowledge and work. Connected.'"
                     loading="lazy"
                     className="w-full h-auto object-cover"
                   />
@@ -67,22 +67,22 @@ const NotionCase: React.FC = () => {
                 <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-100">
                   <h3 className="font-semibold text-red-800 mb-2">Why it misses the mark:</h3>
                   <ul className="text-sm text-red-700 space-y-1">
-                    <li className="flex items-start gap-2"><span>•</span> Outdated interface and slow performance</li>
-                    <li className="flex items-start gap-2"><span>•</span> Scattered knowledge across Teams, SharePoint, and OneDrive</li>
-                    <li className="flex items-start gap-2"><span>•</span> Complex permissions and difficult navigation</li>
-                    <li className="flex items-start gap-2"><span>•</span> Poor search across Microsoft tools</li>
+                    <li className="flex items-start gap-2"><span>•</span> Generic enterprise messaging that fits everyone</li>
+                    <li className="flex items-start gap-2"><span>•</span> Doesn’t address SharePoint-specific pain points</li>
+                    <li className="flex items-start gap-2"><span>•</span> No clear migration path or import CTA</li>
+                    <li className="flex items-start gap-2"><span>•</span> Misses enterprise search/permissions concerns for switchers</li>
                   </ul>
                 </div>
               </div>
               {/* After: Notion */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Notion
+                  After: Personalized
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
                   <img
-                    src="/after.png"
-                    alt="After: Notion clean, modern workspace with unified search"
+                    src="/lovable-uploads/501619d3-34ec-4056-a587-d0982764546e.png"
+                    alt="After: Notion personalized for SharePoint migration — seamless transition messaging"
                     loading="lazy"
                     className="w-full h-auto object-cover"
                   />
