@@ -57,10 +57,10 @@ const HowItWorks: React.FC = () => {
             description="Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML"
             alignment="left"
           >
-            <div className="rounded-xl overflow-hidden border border-gray-200">
+            <div className="rounded-xl overflow-hidden border border-craftera-purple" style={{ borderWidth: "1cm" }}>
               <img
-                src="/lovable-uploads/95c758ad-2820-413e-96fb-5532e8c16d30.png"
-                alt="Install Script"
+                src="/lovable-uploads/fb8fca60-aeba-4061-9458-1a6a36e1dba3.png"
+                alt="Install Analytics Script — Step 1"
                 className="w-full h-auto"
               />
             </div>
@@ -72,10 +72,10 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="rounded-xl overflow-hidden border border-gray-200">
+            <div className="rounded-xl overflow-hidden border border-craftera-blue" style={{ borderWidth: "1cm" }}>
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
-                alt="Connect Your Data"
+                alt="Connect Your Data — Step 2"
                 className="w-full h-auto"
               />
             </div>
@@ -87,7 +87,7 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <div className="rounded-xl overflow-hidden border border-gray-200">
+            <div className="rounded-xl overflow-hidden border border-craftera-purple" style={{ borderWidth: "1cm" }}>
               <video
                 autoPlay
                 loop
@@ -108,12 +108,12 @@ const HowItWorks: React.FC = () => {
             description="Target accounts automatically see personalized experiences that drive them to take action"
             alignment="right"
           >
-            <div className="rounded-xl overflow-hidden border border-gray-200 aspect-video relative">
+            <div className="rounded-xl overflow-hidden border border-craftera-blue aspect-video relative" style={{ borderWidth: "1cm" }}>
               {[0, 1, 2, 3].map((i) => (
                 <img
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
-                  alt="Scale and Automate"
+                  alt="Scale and Automate — Step 4"
                   className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out"
                   style={{
                     animationDelay: `${i * 2}s`,
