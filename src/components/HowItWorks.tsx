@@ -57,11 +57,13 @@ const HowItWorks: React.FC = () => {
             description="Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML"
             alignment="left"
           >
-            <img
-              src="/lovable-uploads/95c758ad-2820-413e-96fb-5532e8c16d30.png"
-              alt="Install Script"
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="rounded-xl overflow-hidden border border-gray-200">
+              <img
+                src="/lovable-uploads/95c758ad-2820-413e-96fb-5532e8c16d30.png"
+                alt="Install Script"
+                className="w-full h-auto"
+              />
+            </div>
           </HowItWorksSection>
 
           <HowItWorksSection
@@ -70,14 +72,11 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 p-4 lg:p-8 rounded-2xl">
+            <div className="rounded-xl overflow-hidden border border-gray-200">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data"
-                className="w-full h-auto rounded-xl bg-white"
-                style={{
-                  boxShadow: "0px 0px 0px 8px #ffffff26",
-                }}
+                className="w-full h-auto"
               />
             </div>
           </HowItWorksSection>
@@ -88,16 +87,13 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 p-4 lg:p-8 rounded-2xl">
+            <div className="rounded-xl overflow-hidden border border-gray-200">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto rounded-lg"
-                style={{
-                  boxShadow: "0px 0px 0px 8px #ffffff26",
-                }}
+                className="w-full h-auto block"
               >
                 <source src="step-3-video.mp4" type="video/mp4" />
                 <source src="step-3-video.webm" type="video/webm" />
@@ -112,15 +108,14 @@ const HowItWorks: React.FC = () => {
             description="Target accounts automatically see personalized experiences that drive them to take action"
             alignment="right"
           >
-            <div className="bg-gradient-to-tl to-indigo-800/80 via-indigo-700/80 from-purple-800/80 rounded-2xl aspect-video relative w-auto">
+            <div className="rounded-xl overflow-hidden border border-gray-200 aspect-video relative">
               {[0, 1, 2, 3].map((i) => (
                 <img
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
                   alt="Scale and Automate"
-                  className="absolute opacity-0 inset-4 w-[calc(100%-32px)] max-h-[calc(100%-32px)] mx-auto lg:inset-6 lg:w-[calc(100%-64px)] lg:max-h-[calc(100%-48px)] rounded-xl bg-white animate-slide-in-out object-fit"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out"
                   style={{
-                    boxShadow: "0px 0px 0px 8px #ffffff26",
                     animationDelay: `${i * 2}s`,
                   }}
                 />
