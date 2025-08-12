@@ -9,8 +9,9 @@ import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const NotionCase: React.FC = () => {
   const userId = useUserId();
-  const title = "Notion Personalization Case Study | Newmode";
-  const description = "How context-aware messaging can boost Notion’s website conversions by aligning copy with visitor intent.";
+  const title = "Notion case study: SharePoint alternative | newmode.ai";
+  const description =
+    "Personalized copy for SharePoint-migrating teams: clearer value, import-ready, unified search—10x faster than SharePoint.";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -23,12 +24,20 @@ const NotionCase: React.FC = () => {
               <TrendingUp className="w-4 h-4" />
               Case Study · Notion
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Enterprise intent → clear value, faster adoption
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              The SharePoint alternative that enterprise teams actually want to use
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mb-8">
-              How enterprise-aware copy improves clarity on security, scale, and cross-functional collaboration to lift conversions.
+            <p className="text-xl text-gray-300 max-w-3xl mb-6">
+              Migration tools ready. No more scattered files across Teams, SharePoint, and OneDrive. Everything searchable in one modern workspace.
             </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <span className="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm font-medium">
+                <Zap className="w-4 h-4 mr-1" /> 10x faster than SharePoint
+              </span>
+              <CtaAnchor href="https://zcal.co/i/mwcbsuUV" variant="secondary" className="bg-white text-black hover:bg-gray-50">
+                Import from SharePoint
+              </CtaAnchor>
+            </div>
           </div>
         </header>
 
@@ -38,46 +47,61 @@ const NotionCase: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">The transformation</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                From universal productivity messaging to enterprise-ready copy that addresses scale, security, and governance.
+                From generic productivity messaging to a SharePoint-switcher experience tailored for enterprise migration.
               </p>
             </div>
             <div className="grid lg:grid-cols-2 gap-8 mb-8">
-              {/* Before */}
+              {/* Before: SharePoint */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  Before: Generic
+                  Before: SharePoint
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-red-200 bg-white">
-                  <div className="aspect-video bg-gray-100" />
+                  <img
+                    src="/before.png"
+                    alt="Before: SharePoint cluttered interface with slow performance"
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
                 <div className="mt-4 p-4 bg-red-50 rounded-lg border border-red-100">
                   <h3 className="font-semibold text-red-800 mb-2">Why it misses the mark:</h3>
                   <ul className="text-sm text-red-700 space-y-1">
-                    <li>• One-size-fits-all productivity language</li>
-                    <li>• Light on enterprise priorities and safeguards</li>
-                    <li>• Lacks decision-stage proof points</li>
+                    <li className="flex items-start gap-2"><span>•</span> Outdated interface and slow performance</li>
+                    <li className="flex items-start gap-2"><span>•</span> Scattered knowledge across Teams, SharePoint, and OneDrive</li>
+                    <li className="flex items-start gap-2"><span>•</span> Complex permissions and difficult navigation</li>
+                    <li className="flex items-start gap-2"><span>•</span> Poor search across Microsoft tools</li>
                   </ul>
                 </div>
               </div>
-              {/* After */}
+              {/* After: Notion */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Personalized
+                  After: Notion
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
-                  <div className="p-6 text-gray-700 space-y-2">
-                    <p><span className="font-semibold">Headline:</span> Where enterprise teams unify knowledge and ship faster</p>
-                    <p><span className="font-semibold">Subheading:</span> Bring docs, projects, and workflows together—secure, scalable, and built for cross-functional collaboration.</p>
-                  </div>
+                  <img
+                    src="/after.png"
+                    alt="After: Notion clean, modern workspace with unified search"
+                    loading="lazy"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
                 <div className="mt-4 p-4 bg-green-50 rounded-lg border border-green-100">
                   <h3 className="font-semibold text-green-800 mb-2">Why it works:</h3>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Aligns to enterprise evaluation criteria</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Reduces risk concerns upfront</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Clarifies path to adoption</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Modern, fast UX — 10x faster than SharePoint</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Unified knowledge with powerful global search</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Simplified permissions and clear navigation</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Migration tools ready — import from SharePoint</li>
                   </ul>
                 </div>
+                <figure className="mt-4 p-4 bg-white rounded-lg border">
+                  <blockquote className="italic text-gray-700">
+                    “Moving off SharePoint finally gave our teams one place to work. Search actually finds what people need, and onboarding is night-and-day faster.”
+                  </blockquote>
+                  <figcaption className="mt-2 text-sm text-gray-500">— IT Director, Global Enterprise</figcaption>
+                </figure>
               </div>
             </div>
           </div>
