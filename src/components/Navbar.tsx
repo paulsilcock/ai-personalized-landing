@@ -25,19 +25,19 @@ const Navbar: React.FC = () => {
 
         <nav className="hidden md:flex items-center space-x-8">
           <a
-            href="#features"
+            href="/#features"
             className="text-gray-600 hover:text-gray-900 transition-colors"
           >
-            Features
+            Case Studies
           </a>
           <a
-            href="#howitworks"
+            href="/#howitworks"
             className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             How It Works
           </a>
           <a
-            href="#benefits"
+            href="/#benefits"
             className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Benefits
