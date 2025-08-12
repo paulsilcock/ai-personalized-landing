@@ -110,7 +110,7 @@ const HowItWorks: React.FC = () => {
           >
             <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-0-7cm aspect-video relative">
               <img
-                src="/lovable-uploads/e0669f49-fddb-42bc-ae92-84e7dcc9aab0.png"
+                src="/lovable-uploads/3068ef88-60a4-4df2-9562-b5739bd08f17.png"
                 alt="Personalized experiences at scale preview"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
