@@ -57,7 +57,7 @@ const HowItWorks: React.FC = () => {
             description="Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML"
             alignment="left"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-0-7cm">
               <img
                 src="/lovable-uploads/63e9eb79-3b20-497a-bd67-2301f7959ae6.png"
                 alt="Install Analytics Script — Step 1"
@@ -72,7 +72,7 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-0-7cm">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data — Step 2"
@@ -87,7 +87,7 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-0-7cm">
               <video
                 autoPlay
                 loop
@@ -108,7 +108,7 @@ const HowItWorks: React.FC = () => {
             description="Target accounts automatically see personalized experiences that drive them to take action"
             alignment="right"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm aspect-video relative">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-0-7cm aspect-video relative">
               <img
                 src="/lovable-uploads/e0669f49-fddb-42bc-ae92-84e7dcc9aab0.png"
                 alt="Personalized experiences at scale preview"
