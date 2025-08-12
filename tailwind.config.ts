@@ -72,6 +72,11 @@ export default {
           green: "#D0FAE5",
           pink: "#FDE7F4",
         },
+        // How It Works border colors
+        howitworks: {
+          purple: "hsl(var(--howitworks-purple))",
+          blue: "hsl(var(--howitworks-blue))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

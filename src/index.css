@@ -33,6 +33,10 @@
     --ring: 240 6% 10%;
 
     --radius: 0.75rem;
+
+    /* How It Works border theme */
+    --howitworks-purple: 271 91% 72%; /* #BA76F9 */
+    --howitworks-blue: 240 84% 74%; /* #8685F4 */
   }
 
   * {
@@ -116,4 +120,6 @@
   .max-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  .border-1cm { border-width: 1cm; }
 }

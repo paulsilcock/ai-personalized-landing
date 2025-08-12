@@ -57,11 +57,11 @@ const HowItWorks: React.FC = () => {
             description="Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML"
             alignment="left"
           >
-            <div className="rounded-xl overflow-hidden border border-craftera-purple" style={{ borderWidth: "1cm" }}>
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple border-1cm">
               <img
-                src="/lovable-uploads/fb8fca60-aeba-4061-9458-1a6a36e1dba3.png"
+                src="/lovable-uploads/43cb5ed5-1c9e-4870-aa42-049924f48d72.png"
                 alt="Install Analytics Script — Step 1"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </HowItWorksSection>
@@ -72,11 +72,11 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="rounded-xl overflow-hidden border border-craftera-blue" style={{ borderWidth: "1cm" }}>
+            <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data — Step 2"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </HowItWorksSection>
@@ -87,13 +87,13 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <div className="rounded-xl overflow-hidden border border-craftera-purple" style={{ borderWidth: "1cm" }}>
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple border-1cm">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto block"
+                className="w-full h-auto block rounded-2xl"
               >
                 <source src="step-3-video.mp4" type="video/mp4" />
                 <source src="step-3-video.webm" type="video/webm" />
@@ -108,13 +108,13 @@ const HowItWorks: React.FC = () => {
             description="Target accounts automatically see personalized experiences that drive them to take action"
             alignment="right"
           >
-            <div className="rounded-xl overflow-hidden border border-craftera-blue aspect-video relative" style={{ borderWidth: "1cm" }}>
+            <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm aspect-video relative">
               {[0, 1, 2, 3].map((i) => (
                 <img
                   key={i}
                   src={`/images/how-it-works-${i}.png`}
                   alt="Scale and Automate — Step 4"
-                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out rounded-2xl"
                   style={{
                     animationDelay: `${i * 2}s`,
                   }}
