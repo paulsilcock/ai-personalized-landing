@@ -17,7 +17,7 @@ const CallToAction: React.FC = () => {
           </h2>
           <p className="text-lg opacity-80 mb-10">
             Join hundreds of businesses already using newmode to boost their
-            conversion rates with AI personalization.
+            conversion rates with AI personalisation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

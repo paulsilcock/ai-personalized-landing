@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Check } from "lucide-react";
-const benefitsList = ["Increase conversion rates by up to 189%", "Create personalized experiences for every traffic source", "No need for manual A/B testing or copywriting", "Works 24/7 to continuously optimize your pages", "Easy to set up with your existing Google accounts", "No technical skills required to create personalized pages"];
+const benefitsList = ["Increase conversion rates by up to 189%", "Create personalised experiences for every traffic source", "No need for manual A/B testing or copywriting", "Works 24/7 to continuously optimize your pages", "Easy to set up with your existing Google accounts", "No technical skills required to create personalised pages"];
 const Benefits: React.FC = () => {
   return <section id="benefits" className="relative section-padding bg-slate-800">
       {/* Wavy top border */}

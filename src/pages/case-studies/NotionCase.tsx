@@ -74,12 +74,12 @@ const NotionCase: React.FC = () => {
               {/* After: Notion */}
               <div className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Personalized
+                  After: Personalised
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
                   <img
                     src="/lovable-uploads/501619d3-34ec-4056-a587-d0982764546e.png"
-                    alt="After: Notion personalized for SharePoint migration — seamless transition messaging"
+                    alt="After: Notion personalised for SharePoint migration — seamless transition messaging"
                     loading="lazy"
                     className="w-full h-auto object-cover"
                   />
@@ -197,7 +197,7 @@ const NotionCase: React.FC = () => {
         <section className="section-padding bg-gradient-to-r from-gray-900 to-black text-white">
           <div className="max-container text-center">
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
-            <p className="text-xl mb-8 text-gray-300">Experience the personalized flow on a real page</p>
+            <p className="text-xl mb-8 text-gray-300">Experience the personalised flow on a real page</p>
             <div className="flex gap-4 justify-center">
               <CtaAnchor href={`https://dash.newmode.ai/demo/notion.com/enterprise${userId ? `?nm_id=${userId}` : ''}`} variant="secondary" className="bg-white text-black hover:bg-gray-50">
                 View Notion Demo

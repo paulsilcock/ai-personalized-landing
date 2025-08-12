@@ -9,7 +9,7 @@ import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const HubSpotCase: React.FC = () => {
   const userId = useUserId();
-  const title = "HubSpot Personalization Case Study | Newmode";
+  const title = "HubSpot Personalisation Case Study | Newmode";
   const description = "How personalized messaging turns Salesforce-switchers into engaged HubSpot prospects.";
 
   return (
@@ -27,7 +27,7 @@ const HubSpotCase: React.FC = () => {
               Turn "Salesforce alternative" intent into instant relevance
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mb-8">
-              See how a personalized version of HubSpot's page speaks directly to switchers' pains—cost and complexity—and keeps them engaged.
+              See how a personalised version of HubSpot's page speaks directly to switchers' pains—cost and complexity—and keeps them engaged.
             </p>
           </div>
         </header>
@@ -39,7 +39,7 @@ const HubSpotCase: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">The transformation</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                From generic positioning that misses the mark to personalized messaging that speaks directly to Salesforce switchers.
+                From generic positioning that misses the mark to personalised messaging that speaks directly to Salesforce switchers.
               </p>
             </div>
 
@@ -68,13 +68,13 @@ const HubSpotCase: React.FC = () => {
 
               {/* After */}
               <div className="relative">
-                <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
+                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
                   After: Personalized
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200">
                   <img 
                     src="/lovable-uploads/a2d22bea-f29c-4492-ac95-143ce045a36a.png" 
-                    alt="Personalized HubSpot page with 'Where Salesforce users find a better way to grow'" 
+                    alt="Personalised HubSpot page with 'Where Salesforce users find a better way to grow'" 
                     className="w-full h-auto"
                   />
                 </div>
@@ -205,7 +205,7 @@ const HubSpotCase: React.FC = () => {
         <section className="section-padding bg-gradient-to-r from-orange-500 to-red-500 text-white">
           <div className="max-container text-center">
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
-            <p className="text-xl mb-8 text-orange-100">Experience the personalized flow on a real page</p>
+            <p className="text-xl mb-8 text-orange-100">Experience the personalised flow on a real page</p>
             <div className="flex gap-4 justify-center">
               <CtaAnchor href={`https://dash.newmode.ai/demo/hubspot.com${userId ? `?nm_id=${userId}` : ''}`} variant="secondary" className="bg-white text-orange-600 hover:bg-gray-50">
                 View HubSpot Demo

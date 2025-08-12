@@ -4,7 +4,7 @@ import { useUserId } from "@/hooks/use-user-id";
 const caseStudyData = [{
   tag: "ABM",
   metric: "+$2.1M in pipeline",
-  title: "How Brex Could Drive 340% Pipeline Growth with AI Personalization",
+  title: "How Brex Could Drive 340% Pipeline Growth with AI Personalisation",
   company: "Brex",
   logo: "/lovable-uploads/42eb5ff2-f4b6-4a77-925e-bc9a2f4905dd.png",
   website: "brex.com",
@@ -12,7 +12,7 @@ const caseStudyData = [{
 }, {
   tag: "ABM",
   metric: "+180% meeting rate",
-  title: "How HubSpot can Achieve 180% Meeting Rate Increase with Smart Website Personalization",
+  title: "How HubSpot can Achieve 180% Meeting Rate Increase with Smart Website Personalisation",
   company: "HubSpot",
   logo: "/lovable-uploads/db6b2199-96ac-46c7-b11e-174cd1e2d792.png",
   website: "hubspot.com",
@@ -46,7 +46,7 @@ const Features: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             That <span className="bg-gradient-to-r from-sky-500/75 to-purple-400/80 bg-clip-text text-transparent">fortune 500</span> prospect and a <span className="bg-gradient-to-r from-purple-400/80 to-fuchsia-300 bg-clip-text text-transparent">startup</span> just saw the same page
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">You personalize everything else—ads, emails, outreach. Then send them all to the same vanilla website. No wonder 65% bounce.</p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">You personalise everything else—ads, emails, outreach. Then send them all to the same vanilla website. No wonder 65% bounce.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

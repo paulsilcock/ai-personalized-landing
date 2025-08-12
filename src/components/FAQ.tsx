@@ -29,7 +29,7 @@ const FAQ: React.FC = () => {
                 How does newmode.ai identify visiting accounts?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                newmode.ai detects visitors through traffic source analysis and integrates with your existing data (CRM, email lists, LinkedIn Ads) to identify and personalize experiences automatically.
+                newmode.ai detects visitors through traffic source analysis and integrates with your existing data (CRM, email lists, LinkedIn Ads) to identify and personalise experiences automatically.
               </AccordionContent>
             </AccordionItem>
 
@@ -53,7 +53,7 @@ const FAQ: React.FC = () => {
                 Do I need technical knowledge to use newmode.ai?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                No. Our conversational AI editor lets you create personalized experiences by describing what you want in plain English. No coding or design skills required.
+                No. Our conversational AI editor lets you create personalised experiences by describing what you want in plain English. No coding or design skills required.
               </AccordionContent>
             </AccordionItem>
 
@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
               <AccordionTrigger className="px-6 py-4 text-lg font-medium text-left">
-                How is newmode.ai different from other personalization tools?
+                How is newmode.ai different from other personalisation tools?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
                 Most tools require element-by-element editing or separate microsite creation. newmode.ai transforms your entire existing website experience through simple AI conversations.
@@ -77,7 +77,7 @@ const FAQ: React.FC = () => {
                 How long does setup take?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Setup takes less than 5 minutes. Add one script, upload your data via CSV, and start creating personalized experiences immediately.
+                Setup takes less than 5 minutes. Add one script, upload your data via CSV, and start creating personalised experiences immediately.
               </AccordionContent>
             </AccordionItem>
 
@@ -101,7 +101,7 @@ const FAQ: React.FC = () => {
                 Can I see results immediately?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Yes. Once you create personalized experiences, target accounts will see them immediately when they visit your website. Analytics show engagement in real-time.
+                Yes. Once you create personalised experiences, target accounts will see them immediately when they visit your website. Analytics show engagement in real-time.
               </AccordionContent>
             </AccordionItem>
 
@@ -113,7 +113,7 @@ const FAQ: React.FC = () => {
                 What data do I need to provide?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                You can import LinkedIn Ads, email lists, target account lists, or simply use our traffic source detection. The more data you provide, the more personalized the experiences.
+                You can import LinkedIn Ads, email lists, target account lists, or simply use our traffic source detection. The more data you provide, the more personalised the experiences.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

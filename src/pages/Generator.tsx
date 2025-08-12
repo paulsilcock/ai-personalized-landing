@@ -8,7 +8,7 @@ import { useUserId } from "@/hooks/use-user-id";
 const Generator: React.FC = () => {
   const userId = useUserId();
   const title = "Landing Page Generator | newmode.ai";
-  const description = "Choose a tailored demo: Brex, HubSpot, or Notion — see personalized landing pages in action.";
+  const description = "Choose a tailored demo: Brex, HubSpot, or Notion — see personalised landing pages in action.";
 
   const links = {
     brex: `https://dash.newmode.ai/demo/brex.com${userId ? `?nm_id=${userId}` : ``}`,
@@ -25,7 +25,7 @@ const Generator: React.FC = () => {
           <div className="max-container text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">1:1 Landing Page Personalisation Generator</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Pick a template to preview a personalized, account-aware landing page experience.
+              Pick a template to preview a personalised, account-aware landing page experience.
             </p>
           </div>
         </header>
@@ -37,7 +37,7 @@ const Generator: React.FC = () => {
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src="/lovable-uploads/hubspot-logo.svg"
-                  alt="HubSpot logo for personalized landing page demo"
+                  alt="HubSpot logo for personalised landing page demo"
                   className="w-8 h-8 object-contain"
                   loading="lazy"
                 />
@@ -56,7 +56,7 @@ const Generator: React.FC = () => {
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src="/lovable-uploads/42eb5ff2-f4b6-4a77-925e-bc9a2f4905dd.png"
-                  alt="Brex logo for personalized landing page demo"
+                  alt="Brex logo for personalised landing page demo"
                   className="w-8 h-8 object-contain"
                   loading="lazy"
                 />
@@ -75,7 +75,7 @@ const Generator: React.FC = () => {
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src="/lovable-uploads/notion-logo.svg"
-                  alt="Notion logo for personalized landing page demo"
+                  alt="Notion logo for personalised landing page demo"
                   className="w-8 h-8 object-contain"
                   loading="lazy"
                 />

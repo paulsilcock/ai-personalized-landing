@@ -7,8 +7,8 @@ const CustomerSegments = () => {
     id: "sales",
     label: "🎯 Sales Teams",
     title: "Make every prospect visit count",
-    description: "Create personalized experiences that support your sales conversations",
-    benefits: ["Create personalized experiences that support your sales conversations (healthcare prospects see healthcare messaging)", "Track which target accounts visited your website and engaged with content", "Create different experiences for prospects at different deal stages"],
+    description: "Create personalised experiences that support your sales conversations",
+    benefits: ["Create personalised experiences that support your sales conversations (healthcare prospects see healthcare messaging)", "Track which target accounts visited your website and engaged with content", "Create different experiences for prospects at different deal stages"],
     metrics: [{
       label: "Average Conversion Increase",
       value: "35%"
@@ -22,9 +22,9 @@ const CustomerSegments = () => {
   }, {
     id: "marketing",
     label: "📈 Marketing Teams",
-    title: "Scale personalization across all your campaigns",
+    title: "Scale personalisation across all your campaigns",
     description: "Extend email campaign messaging seamlessly to your website",
-    benefits: ["Extend email campaign messaging seamlessly to your website", "Show different experiences to enterprise vs SMB segments automatically", "Measure which personalized experiences drive the most conversions"],
+    benefits: ["Extend email campaign messaging seamlessly to your website", "Show different experiences to enterprise vs SMB segments automatically", "Measure which personalised experiences drive the most conversions"],
     metrics: [{
       label: "Trial Conversion Rate",
       value: "+42%"
@@ -38,9 +38,9 @@ const CustomerSegments = () => {
   }, {
     id: "growth",
     label: "🚀 Growth Teams",
-    title: "Optimize personalization strategy and scale what works",
-    description: "Test personalized vs generic experiences to prove overall impact",
-    benefits: ["Test personalized vs generic experiences to prove overall impact", "Scale successful personalization patterns across similar account types", "Measure overall impact of personalization on pipeline conversion rates"],
+    title: "Optimize personalisation strategy and scale what works",
+    description: "Test personalised vs generic experiences to prove overall impact",
+    benefits: ["Test personalised vs generic experiences to prove overall impact", "Scale successful personalisation patterns across similar account types", "Measure overall impact of personalisation on pipeline conversion rates"],
     metrics: [{
       label: "Lead Quality Score",
       value: "+48%"
@@ -85,7 +85,7 @@ const CustomerSegments = () => {
             Results Across <span className="bg-gradient-to-r from-purple-400/80 to-fuchsia-300 bg-clip-text text-transparent">Teams</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            See how companies like yours are achieving remarkable growth with AI-powered personalization
+            See how companies like yours are achieving remarkable growth with AI-powered personalisation
           </p>
         </div>
 

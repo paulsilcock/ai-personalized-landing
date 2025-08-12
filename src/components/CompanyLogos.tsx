@@ -32,7 +32,7 @@ const CompanyLogos = () => {
       <div className="max-container">
         <div className="text-center mb-12">
           <h2 className="font-semibold text-foreground mb-4 text-2xl">
-            Thousands of B2B Companies Use Website Personalization
+            Thousands of B2B Companies Use Website Personalisation
           </h2>
         </div>
         <div className="relative overflow-hidden">

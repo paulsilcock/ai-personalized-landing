@@ -9,7 +9,7 @@ import { ArrowRight, TrendingUp, Users, Zap, CheckCircle } from "lucide-react";
 
 const BrexCase: React.FC = () => {
   const userId = useUserId();
-  const title = "Brex Personalization Case Study | Newmode";
+  const title = "Brex Personalisation Case Study | Newmode";
   const description = "How ABM-tailored pages can drive pipeline growth for Brex with precise, account-aware messaging.";
 
   return (
@@ -38,7 +38,7 @@ const BrexCase: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">The transformation</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                From generic positioning that misses the mark to personalized messaging that speaks directly to AI startups.
+                From generic positioning that misses the mark to personalised messaging that speaks directly to AI startups.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ const BrexCase: React.FC = () => {
               {/* After */}
               <figure className="relative">
                 <div className="absolute -top-3 left-6 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
-                  After: Personalized
+                  After: Personalised
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border-2 border-green-200 bg-white">
                   <img
@@ -90,7 +90,7 @@ const BrexCase: React.FC = () => {
               </figure>
             </div>
             <p className="mt-6 text-base text-gray-600">
-              The personalized version speaks directly to AI startups who are searching for financial solutions that understand their unique needs — optimizing runway while scaling AI infrastructure — rather than generic spend management messaging.
+              The personalised version speaks directly to AI startups who are searching for financial solutions that understand their unique needs — optimizing runway while scaling AI infrastructure — rather than generic spend management messaging.
             </p>
           </div>
         </section>
@@ -188,7 +188,7 @@ const BrexCase: React.FC = () => {
         <section className="section-padding bg-gradient-to-r from-gray-900 to-black text-white">
           <div className="max-container text-center">
             <h2 className="text-3xl font-bold mb-4">See it in action</h2>
-            <p className="text-xl mb-8 text-gray-300">Experience the personalized flow on a real page</p>
+            <p className="text-xl mb-8 text-gray-300">Experience the personalised flow on a real page</p>
             <div className="flex gap-4 justify-center">
               <CtaAnchor href={`https://dash.newmode.ai/demo/brex.com${userId ? `?nm_id=${userId}` : ''}`} variant="secondary" className="bg-white text-black hover:bg-gray-50">
                 View Brex Demo

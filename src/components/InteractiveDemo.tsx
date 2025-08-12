@@ -9,7 +9,7 @@ const InteractiveDemo: React.FC = () => {
             Interactive Demo
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-2">
-            See Account-Based Website Personalization in Action
+            See Account-Based Website Personalisation in Action
           </p>
           
           <div className="text-gray-600 space-y-2 mb-8">

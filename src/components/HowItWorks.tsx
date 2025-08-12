@@ -45,7 +45,7 @@ const HowItWorks: React.FC = () => {
             How <span className="gradient-text">newmode.ai Works</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our AI works tirelessly to create personalized experiences that
+            Our AI works tirelessly to create personalised experiences that
             convert more visitors into customers.
           </p>
         </div>
@@ -105,13 +105,13 @@ const HowItWorks: React.FC = () => {
           <HowItWorksSection
             stepNumber="04"
             title="Scale and Automate for Every Visitor"
-            description="Target accounts automatically see personalized experiences that drive them to take action"
+            description="Target accounts automatically see personalised experiences that drive them to take action"
             alignment="right"
           >
             <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-0-7cm aspect-video relative">
               <img
                 src="/lovable-uploads/3068ef88-60a4-4df2-9562-b5739bd08f17.png"
-                alt="Personalized experiences at scale preview"
+                alt="Personalised experiences at scale preview"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />

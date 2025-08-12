@@ -8,7 +8,7 @@ import heroBg from "@/assets/hero-gradient.jpg";
 const Hero: React.FC = () => {
   return <section className="relative overflow-hidden bg-gradient-to-b from-white to-craftera-blue/5 section-padding">
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <img src={heroBg} alt="AI website personalization hero background" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
+        <img src={heroBg} alt="AI website personalisation hero background" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
         <div className="absolute inset-0 opacity-50" aria-hidden="true">
           <HeroVisualization />
         </div>
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
               <br />
               <LandingPageEffect />
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl">AI that personalizes your website for each visitor, showing the right content, messaging, and CTAs based on who they are.</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl">AI that personalises your website for each visitor, showing the right content, messaging, and CTAs based on who they are.</p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <PlaygroundButton />
               <GetStartedButton />
