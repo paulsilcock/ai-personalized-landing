@@ -109,17 +109,16 @@ const HowItWorks: React.FC = () => {
             alignment="right"
           >
             <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm aspect-video relative">
-              {[0, 1, 2, 3].map((i) => (
-                <img
-                  key={i}
-                  src={`/images/how-it-works-${i}.png`}
-                  alt="Scale and Automate — Step 4"
-                  className="absolute inset-0 w-full h-full object-cover opacity-0 animate-slide-in-out rounded-xl"
-                  style={{
-                    animationDelay: `${i * 2}s`,
-                  }}
-                />
-              ))}
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="Step4.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </HowItWorksSection>
         </div>
