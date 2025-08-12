@@ -57,11 +57,11 @@ const HowItWorks: React.FC = () => {
             description="Add one script to your website header. Works with: WordPress, Shopify, Webflow, custom HTML"
             alignment="left"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-purple border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-1cm">
               <img
-                src="/lovable-uploads/43cb5ed5-1c9e-4870-aa42-049924f48d72.png"
+                src="/lovable-uploads/63e9eb79-3b20-497a-bd67-2301f7959ae6.png"
                 alt="Install Analytics Script — Step 1"
-                className="w-full h-auto rounded-xl bg-transparent"
+                className="w-full h-auto block rounded-2xl"
               />
             </div>
           </HowItWorksSection>
@@ -72,11 +72,11 @@ const HowItWorks: React.FC = () => {
             description="Import target account lists, LinkedIn Ads, or keywords via CSV"
             alignment="right"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-blue border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-blue bg-howitworks-blue border-1cm">
               <img
                 src="/lovable-uploads/b8109354-86e2-4e3f-8e80-0490ac16438b.png"
                 alt="Connect Your Data — Step 2"
-                className="w-full h-auto rounded-xl"
+                className="w-full h-auto block rounded-2xl"
               />
             </div>
           </HowItWorksSection>
@@ -87,13 +87,13 @@ const HowItWorks: React.FC = () => {
             description="Describe what you want in plain English. Our AI transforms your website for each account instantly"
             alignment="left"
           >
-            <div className="rounded-2xl overflow-hidden border border-howitworks-purple border-1cm">
+            <div className="rounded-2xl overflow-hidden border border-howitworks-purple bg-howitworks-purple border-1cm">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto block rounded-xl"
+                className="w-full h-auto block rounded-2xl"
               >
                 <source src="step-3-video.mp4" type="video/mp4" />
                 <source src="step-3-video.webm" type="video/webm" />
