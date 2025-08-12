@@ -30,7 +30,7 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
       </div>
 
       <div className="w-full lg:w-1/2">
-        <div className="relative rounded-xl overflow-hidden">{children}</div>
+        <div className="relative">{children}</div>
       </div>
     </div>
   );
