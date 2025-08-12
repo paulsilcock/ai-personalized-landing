@@ -42,6 +42,12 @@ const Navbar: React.FC = () => {
           >
             Benefits
           </a>
+          <Link
+            to="/generator"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Landing Page Generator
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2 md:gap-4">

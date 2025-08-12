@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import HubSpotCase from "./pages/case-studies/HubSpotCase";
 import BrexCase from "./pages/case-studies/BrexCase";
 import NotionCase from "./pages/case-studies/NotionCase";
+import Generator from "./pages/Generator";
 import { PostHogProvider } from "posthog-js/react";
 import { LOCAL_STORAGE_EVENT } from "./hooks/use-user-id";
 
@@ -49,6 +50,7 @@ const App = () => (
               <Route path="/case/hubspot" element={<HubSpotCase />} />
               <Route path="/case/brex" element={<BrexCase />} />
               <Route path="/case/notion" element={<NotionCase />} />
+              <Route path="/generator" element={<Generator />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
