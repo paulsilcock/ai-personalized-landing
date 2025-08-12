@@ -4,16 +4,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CtaAnchor } from "@/components/cta/CtaAnchor";
 import { useUserId } from "@/hooks/use-user-id";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Generator: React.FC = () => {
   const userId = useUserId();
+  const isMobile = useIsMobile();
   const title = "Landing Page Generator | newmode.ai";
   const description = "Choose a tailored demo: Brex, HubSpot, or Notion — see personalised landing pages in action.";
 
+  const getBaseUrl = (url: string) => {
+    const baseUrl = `${url}${userId ? `?nm_id=${userId}` : ``}`;
+    if (!isMobile) {
+      const separator = userId ? '&' : '?';
+      return `${baseUrl}${separator}121=true`;
+    }
+    return baseUrl;
+  };
+
   const links = {
-    brex: `https://dash.newmode.ai/demo/brex.com${userId ? `?nm_id=${userId}` : ``}`,
-    hubspot: `https://dash.newmode.ai/demo/hubspot.com${userId ? `?nm_id=${userId}` : ``}`,
-    notion: `https://dash.newmode.ai/demo/notion.com/enterprise${userId ? `?nm_id=${userId}` : ``}`,
+    brex: getBaseUrl('https://dash.newmode.ai/demo/brex.com'),
+    hubspot: getBaseUrl('https://dash.newmode.ai/demo/hubspot.com'),
+    notion: getBaseUrl('https://dash.newmode.ai/demo/notion.com/enterprise'),
   } as const;
 
   return (
