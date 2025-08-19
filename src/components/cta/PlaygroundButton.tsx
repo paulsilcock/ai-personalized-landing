@@ -8,7 +8,7 @@ export function PlaygroundButton({
   size?: "sm" | "md";
   variant?: "primary" | "secondary";
 }) {
-  const href = "https://zcal.co/i/mwcbsuUV";
+  const href = "https://zcal.co/t/newmode/discovery";
 
   return (
     <CtaAnchor
