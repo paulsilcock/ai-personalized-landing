@@ -55,7 +55,7 @@ const Generator: React.FC = () => {
                 <h2 className="text-xl font-semibold">HubSpot</h2>
               </div>
               <p className="text-gray-600 mb-6">
-                Tailored for Salesforce switchers — clearer value and lower complexity friction.
+                Test how HubSpot website would appear with 1:1 personalisation
               </p>
               <CtaAnchor href={links.hubspot} variant="primary" target="_blank" rel="noopener noreferrer">
                 Open HubSpot demo
@@ -74,7 +74,7 @@ const Generator: React.FC = () => {
                 <h2 className="text-xl font-semibold">Brex</h2>
               </div>
               <p className="text-gray-600 mb-6">
-                Finance-team messaging that recognizes intent and reduces conversion friction.
+                Test how Brex website would appear with 1:1 personalisation
               </p>
               <CtaAnchor href={links.brex} variant="primary" target="_blank" rel="noopener noreferrer">
                 Open Brex demo
@@ -93,7 +93,7 @@ const Generator: React.FC = () => {
                 <h2 className="text-xl font-semibold">Notion</h2>
               </div>
               <p className="text-gray-600 mb-6">
-                SharePoint-migration path with unified search and enterprise-ready onboarding.
+                Test how Notion website would appear with 1:1 personalisation
               </p>
               <CtaAnchor href={links.notion} variant="primary" target="_blank" rel="noopener noreferrer">
                 Open Notion demo
