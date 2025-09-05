@@ -1,49 +1,34 @@
 import { useStudioBookmarklet } from "@/hooks/use-bookmarklet";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "./ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { useEffect, useRef } from "react";
+import { Bookmark } from "lucide-react";
 
 export function Bookmarklet() {
   const bookmarklet = useStudioBookmarklet();
 
+  const linkRef = useRef<HTMLAnchorElement>(null);
+
+  // React blocks bookmarklets when injected directly, so we patch the link this way
+  useEffect(() => {
+    if (linkRef.current) {
+      linkRef.current.setAttribute("href", bookmarklet);
+    }
+  }, [bookmarklet]);
+
   return (
-    <TooltipProvider>
-      <Tooltip delayDuration={0}>
-        <TooltipTrigger asChild>
-          <a
-            href={bookmarklet}
-            draggable
-            className="flex h-10 items-center select-none rounded-lg bg-gradient-to-br from-indigo-500/75 to-purple-400/80 px-4 py-2 font-medium text-white transition-transform text-sm whitespace-nowrap"
-          >
-            <span className="hidden md:inline">Studio </span>🚀
-          </a>
-        </TooltipTrigger>
-        <TooltipContent>
-          <div className="max-w-[280px] space-y-2 px-2 py-3">
-            <div className="flex items-start gap-2">
-              <p className="text-sm">
-                Click me to start Studio on this website
-              </p>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <div className="flex-1 h-px bg-gray-200"></div>
-              <span className="text-xs text-gray-400 font-medium">OR</span>
-              <div className="flex-1 h-px bg-gray-200"></div>
-            </div>
-
-            <div className="flex items-start gap-2">
-              <p className="text-sm">
-                Drag me into your browser's bookmark bar and click the bookmark
-                on any other website to test Studio there!
-              </p>
-            </div>
-          </div>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <Tooltip delayDuration={0}>
+      <TooltipTrigger asChild>
+        <a
+          ref={linkRef}
+          className="text-sm px-3 py-2 rounded-md border-2 border-dashed hover:border-gray-300 hover:bg-gray-50 transition-all flex justify-center items-center gap-2 font-medium cursor-grab text-foreground w-fit"
+          onClick={(e) => e.preventDefault()}
+        >
+          <Bookmark className="size-4" /> Personalise this page
+        </a>
+      </TooltipTrigger>
+      <TooltipContent side="bottom">
+        <p>Drag me into your bookmark bar</p>
+      </TooltipContent>
+    </Tooltip>
   );
 }
