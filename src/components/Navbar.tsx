@@ -22,18 +22,18 @@ const Navbar: React.FC = () => {
   return (
     <header className="w-full py-4 px-4 sm:px-6 lg:px-8 border-b border-gray-100 sticky top-0 left-0 z-30 bg-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity flex-shrink-0">
           <img
             src="/lovable-uploads/d7797353-d7c2-4886-a480-0e9a6a32501f.png"
             alt="newmode Logo"
-            className="w-10 h-10"
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
-          <span className="text-xl font-bold text-craftera-dark">
+          <span className="text-lg sm:text-xl font-bold text-craftera-dark">
             newmode<span className="gradient-text">.ai</span>
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8">
           <a
             href="/#features"
             className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2 md:gap-4">
+        <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-shrink-0">
           {isMobile && (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="md:hidden">
+                <Button variant="ghost" size="sm" className="lg:hidden p-2">
                   <Menu className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
           <GetStartedButton
             size="sm"
             variant="ghost"
-            className="hidden lg:block"
+            className="hidden xl:block"
           />
           <PlaygroundButton size="sm" />
         </div>
