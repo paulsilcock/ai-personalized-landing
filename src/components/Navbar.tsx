@@ -68,24 +68,24 @@ const Navbar: React.FC = () => {
                   <Menu className="h-6 w-6" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg z-50">
+              <DropdownMenuContent align="end" className="w-56 bg-white border border-gray-200 shadow-lg z-50">
                 <DropdownMenuItem asChild>
-                  <a href="/#features" className="w-full text-left px-3 py-2 hover:bg-gray-100">
+                  <a href="/#features" className="w-full text-left px-4 py-3 text-base hover:bg-gray-100">
                     Case Studies
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/#howitworks" className="w-full text-left px-3 py-2 hover:bg-gray-100">
+                  <a href="/#howitworks" className="w-full text-left px-4 py-3 text-base hover:bg-gray-100">
                     How It Works
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="/#benefits" className="w-full text-left px-3 py-2 hover:bg-gray-100">
+                  <a href="/#benefits" className="w-full text-left px-4 py-3 text-base hover:bg-gray-100">
                     Benefits
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/generator" className="w-full text-left px-3 py-2 hover:bg-gray-100">
+                  <Link to="/generator" className="w-full text-left px-4 py-3 text-base hover:bg-gray-100">
                     Landing Page Generator
                   </Link>
                 </DropdownMenuItem>
