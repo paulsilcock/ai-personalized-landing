@@ -23,7 +23,7 @@ export function Bookmarklet() {
           className="text-sm px-3 py-2 rounded-md border-2 border-dashed hover:border-gray-300 hover:bg-gray-50 transition-all flex justify-center items-center gap-2 font-medium cursor-grab text-foreground w-fit"
           onClick={(e) => e.preventDefault()}
         >
-          <Bookmark className="size-4" /> Personalize page
+          <Bookmark className="size-4" /> Personalize Page
         </a>
       </TooltipTrigger>
       <TooltipContent side="bottom">
