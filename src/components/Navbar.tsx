@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="md:hidden p-2">
-                  <Menu className="h-5 w-5" />
+                  <Menu className="h-6 w-6" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg z-50">
@@ -97,7 +97,9 @@ const Navbar: React.FC = () => {
             variant="ghost"
             className="hidden xl:block"
           />
-          <PlaygroundButton size="sm" />
+          <div className="hidden sm:block">
+            <PlaygroundButton size="sm" />
+          </div>
         </div>
       </div>
     </header>
