@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           <a
             href="/#features"
             className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
           {isMobile && (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="lg:hidden p-2">
+                <Button variant="ghost" size="sm" className="md:hidden p-2">
                   <Menu className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
