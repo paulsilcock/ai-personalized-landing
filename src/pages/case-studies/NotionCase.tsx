@@ -24,9 +24,9 @@ const NotionCase: React.FC = () => {
               <TrendingUp className="w-4 h-4" />
               Case Study · Notion
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Turn "SharePoint alternative" intent into instant relevance</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">How to turn "SharePoint alternative" intent into instant relevance</h1>
             <p className="text-xl text-gray-300 max-w-3xl mb-6">
-              Migration tools ready. No more scattered files across Teams, SharePoint, and OneDrive. Everything searchable in one modern workspace.
+              See how personalized messaging transforms generic productivity pages into migration-ready experiences that convert SharePoint switchers.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <span className="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm font-medium">
@@ -63,7 +63,7 @@ const NotionCase: React.FC = () => {
                   <h3 className="font-semibold text-red-800 mb-2">Why it misses the mark:</h3>
                   <ul className="text-sm text-red-700 space-y-1">
                     <li className="flex items-start gap-2"><span>•</span> Generic enterprise messaging that fits everyone</li>
-                    <li className="flex items-start gap-2"><span>•</span> Doesn’t address SharePoint-specific pain points</li>
+                    <li className="flex items-start gap-2"><span>•</span> Doesn't address SharePoint-specific pain points</li>
                     <li className="flex items-start gap-2"><span>•</span> No clear migration path or import CTA</li>
                     <li className="flex items-start gap-2"><span>•</span> Misses enterprise search/permissions concerns for switchers</li>
                   </ul>
@@ -85,17 +85,17 @@ const NotionCase: React.FC = () => {
                 <div className="mt-4 p-4 bg-green-50 rounded-lg border border-green-100">
                   <h3 className="font-semibold text-green-800 mb-2">Why it works:</h3>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Modern, fast UX — 10x faster than SharePoint</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Unified knowledge with powerful global search</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Simplified permissions and clear navigation</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Migration tools ready — import from SharePoint</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> "Modern, fast UX — 10x faster than SharePoint"</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> "Unified knowledge with powerful global search"</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> "Simplified permissions and clear navigation"</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> "Migration tools ready — import from SharePoint"</li>
                   </ul>
                 </div>
                 <figure className="mt-4 p-4 bg-white rounded-lg border">
                   <blockquote className="italic text-gray-700">
-                    “Moving off SharePoint finally gave our teams one place to work. Search actually finds what people need, and onboarding is night-and-day faster.”
+                    "This personalized approach helped us achieve 35% higher conversions by matching visitor intent with relevant messaging instead of generic productivity copy."
                   </blockquote>
-                  <figcaption className="mt-2 text-sm text-gray-500">— IT Director, Global Enterprise</figcaption>
+                  <figcaption className="mt-2 text-sm text-gray-500">— Marketing Director, SaaS Company</figcaption>
                 </figure>
               </div>
             </div>
